@@ -1,0 +1,97 @@
+:root{
+    --primary-color : #000a23;
+    --secundary-color: #021d34;
+    --third-color: #153f59;
+    --light-color: #94b8d7;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+/*--Utilities*/
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*--Header--*/
+.main-header{
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding-top: 1.3rem;
+}
+.main-icon{
+    overflow: hidden;
+    font-weight: lighter;
+}
+.main-icon .first-letter{
+    position: relative;
+    z-index: 50;
+    background-color: var(--primary-color);
+}
+.main-icon .letter{
+    position: relative;
+    left: -48%;
+    transition: .5s;
+}
+.main-icon .rest{
+    visibility: hidden;
+    width: 0;
+    position: relative; 
+    left: -100%;
+    transition: .5s;
+}
+.main-icon:hover .letter{
+    visibility: unset;
+    width: 100%;
+    left: 0;
+}
+.bar-header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-header{
+    display: flex;
+    list-style: none;
+    
+}
+.nav-header li{
+    margin-right: 18px;
+}
+.nav-header a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.container-header{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.presentation{
+    font-size: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.presentation p{
+    margin: 1rem;
+}
+.presentation-description{
+    font-size: 1rem;
+}
+.presentation .hightlight{
+    color: rgb(228, 192, 33);
+}
