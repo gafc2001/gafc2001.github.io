@@ -13,6 +13,9 @@
 img{
     max-width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -74,7 +77,6 @@ h1,h2,h3,h4{
 .nav-header a{
     text-decoration: none;
     color: #fff;
-
 }
 .container-header{
     display: flex;
@@ -220,12 +222,14 @@ h1,h2,h3,h4{
 .footer-container{
     width: 90%;
     margin: 0 auto;
+    padding: .8rem  0; 
 }
 .content-footer{
     color: #fff;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    align-items: center;
 }
 .title-footer{
     grid-column: 2/3;
