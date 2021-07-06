@@ -189,3 +189,63 @@ h1,h2,h3,h4{
     padding: .8rem 2rem;
     text-align: center;
 }
+.skill-container{
+    background-color: var(--secundary-color);
+}
+.skill-content{
+    /* background-color: var(--third-color); */
+    padding: 2rem;
+    color: white;
+    border-radius: 10px;
+}
+.skill-content .bar{
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    position: relative;
+}
+.skill-content .progress{
+    position: absolute;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #fff;
+    color: black;
+}
+
+.main-footer{
+    background-color: var(--primary-color);
+}
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.content-footer{
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.title-footer{
+    grid-column: 2/3;
+}
+.contact-list{
+    grid-column: 3/4;
+}
+.contact-list ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.contact-list li{
+    margin-left: 1rem;
+    border: 1px solid #fff;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+}

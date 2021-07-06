@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <title>Gustavo Farfan | Portfolio</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
     <header class="main-header">
         <div class="container container-header">
@@ -22,7 +24,7 @@
                 </h1>
                 <nav class="nav-container">
                     <ul class="nav-header">
-                        <li><a href="#project">Proyectos</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
                         <li><a href="#contact">Contacto</a></li>
                         <li><a href="#skill">Conocimientos</a></li>
                     </ul>
@@ -31,12 +33,13 @@
             <div class="presentation">
                 <p>Hola, Soy <span class="hightlight">Gustavo</span>!!</p>
                 <p>Soy un <span class="hightlight">desarrollador de software</span></p>
-                <p class="presentation-description">Me encanta cadia aprender nuevas tecnologías y lo que se puede llegar a realizar. Los desafios los veo como una forma de aprender y probar mis conocimientos</p>
+                <p class="presentation-description">Me encanta cadia aprender nuevas tecnologías y lo que se puede
+                    llegar a realizar. Los desafios los veo como una forma de aprender y probar mis conocimientos</p>
             </div>
         </div>
     </header>
     <main>
-        <div class="container title-container">
+        <div class="container title-container" id="projects">
             <h2 class="title">Proyectos</h2>
         </div>
         <div class="container">
@@ -81,7 +84,8 @@
                 </div>
                 <div class="project-item">
                     <h3 class="project-title">El tornillo Feliz</h3>
-                    <p class="project-description">Pagina de ferreteria <span>"El tornillo Feliz"</span>, con carrito y chatbot</p>
+                    <p class="project-description">Pagina de ferreteria <span>"El tornillo Feliz"</span>, con carrito y
+                        chatbot</p>
                     <div class="project-image">
                         <img src="../images/django.png" alt="">
                     </div>
@@ -150,52 +154,72 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div id="skill">
-                <div class="">
+        <div id="skill" class="skill-container">
+            <div class="container">
+                <div class="skill-content">
                     <h3>Conocimientos</h3>
                     <div>
                         <p>HTML5, CSS3, Javascript </p>
                         <div>
-                            <span class="bar"></span>
-                        </div>
-                    </div>
-                    <div>
-                        <p>PHP, Laravel </p>
-                        <div>
-                            <span class="bar"></span>
+                            <span class="bar" >
+                                <span class="progress" data-lvl="80"></span>
+                            </span>
+                            
                         </div>
                     </div>
                     <div>
                         <p>Python, Django </p>
                         <div>
-                            <span class="bar"></span>
+                            <span class="bar" >
+                                <span class="progress" data-lvl="70"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>PHP, Laravel </p>
+                        <div>
+                            <span class="bar" >
+                                <span class="progress" data-lvl="80"></span>
+                            </span>
                         </div>
                     </div>
                     <div>
                         <p>SQL </p>
                         <div>
-                            <span class="bar"></span>
+                            <span class="bar" >
+                                <span class="progress" data-lvl="60"></span>
+                            </span>
                         </div>
                     </div>
                     <div>
                         <p>C#, Java </p>
                         <div>
-                            <span class="bar"></span>
+                            <span class="bar" >
+                                <span class="progress" data-lvl="40"></span>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="main-footer">
-        <div class="container">
+    <footer class="main-footer" id="contact">
+        <div class="footer-container">
             <div class="content-footer">
-                <p>Gustavo Farfan 2021</p>
+                <p class="title-footer">Gustavo Farfan 2021</p>
+                <div class="contact-list">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i></li>
+                        <li><i class="fas fa-phone"></i></li>
+                        <li><i class="fab fa-github"></i></li>
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
-
     <script src="https://kit.fontawesome.com/0dadf959e1.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
