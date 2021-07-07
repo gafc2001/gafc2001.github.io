@@ -224,6 +224,16 @@ h1,h2,h3,h4{
         margin: 0 auto;
     }
 }
+@media (max-width: 667px){
+    .skill-flex{
+        width: 100%;
+        padding: 1.8rem;
+    }
+    .skill-content{
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+}
 .skill-content .bar{
     display: inline-block;
     width: 100%;
