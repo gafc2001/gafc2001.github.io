@@ -65,6 +65,8 @@ h1,h2,h3,h4{
 .bar-header{
     display: flex;
     justify-content: space-between;
+    /* flex-direction: column; */
+    margin: 16px;
 }
 .nav-header{
     display: flex;
@@ -115,9 +117,20 @@ h1,h2,h3,h4{
     gap:1rem ;
 }
 .project-item{
-    flex: 1 1 33.3%;
     box-shadow: 1px 3px 8px gray;
     padding: 1rem;
+}
+@media (max-width: 1024px) {
+    .project-list{
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem;
+    }
+}
+@media (max-width: 762px) {
+    .project-list{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
 }
 /*Tags styles*/
 .project-tags ul{
@@ -194,15 +207,26 @@ h1,h2,h3,h4{
 .skill-container{
     background-color: var(--secundary-color);
 }
+.skill-flex{
+    display: flex;
+
+}
 .skill-content{
-    /* background-color: var(--third-color); */
+    flex: 1;
     padding: 2rem;
     color: white;
     border-radius: 10px;
 }
+@media (max-width: 824px) {
+    .skill-flex{
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 .skill-content .bar{
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 20px;
     background-color: var(--light-color);
     border-radius: 20px;
@@ -215,7 +239,6 @@ h1,h2,h3,h4{
     background-color: #fff;
     color: black;
 }
-
 .main-footer{
     background-color: var(--primary-color);
 }
@@ -236,6 +259,13 @@ h1,h2,h3,h4{
 }
 .contact-list{
     grid-column: 3/4;
+}
+@media (max-width: 768px){
+    .content-footer{
+        font-family: 1.3em;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .contact-list ul{
     list-style: none;
