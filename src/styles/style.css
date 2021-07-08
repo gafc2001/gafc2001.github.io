@@ -13,6 +13,7 @@
 }
 a{
     text-decoration: none;
+    color: unset;
 }
 img{
     max-width: 100%;
@@ -141,14 +142,16 @@ h1,h2,h3,h4{
 .presentation .hightlight{
     color: var(--hight-light);
 }
+
 .title-container{
-    border-bottom: 1px solid black;
     padding-bottom: 2px;
 }
 .title{
-    font-family: 'Exo 2', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 2em;
+    font-weight: bold;
+    color: rgb(36, 105, 255);
 }
 .project-list{
     display: grid;
@@ -156,7 +159,7 @@ h1,h2,h3,h4{
     gap:1rem ;
 }
 .project-item{
-    box-shadow: 1px 3px 8px gray;
+    border: 2px solid rgb(219, 219, 219);
     padding: 1rem;
     display: flex;
     flex-direction: column;
