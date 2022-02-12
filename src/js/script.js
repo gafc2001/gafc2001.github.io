@@ -1,5 +1,5 @@
-let barProgress = document.getElementsByClassName('progress');
-for (const element of barProgress) {
-    progress = element.getAttribute('data-lvl');
-    element.style.width = progress + "%";
-}
+window.addEventListener('DOMContentLoaded',function(e) {
+    const year = document.getElementById('year');
+    let yearValue = new Date();
+    year.innerText = yearValue.getFullYear();
+})
