@@ -3,7 +3,15 @@ body {
 }
 img.img-profile {
   max-width: 270px;
+  border: 4px dashed rgb(0, 219, 183);
 }
+
+@keyframes spin { 
+  100% { 
+    transform: rotateZ(360deg);
+  }
+}
+
 /*=========Text typing==========*/
 .text-typing {
   padding: 10px 20px 10px 0;
@@ -126,7 +134,18 @@ img.img-profile {
   position: relative;
   z-index: 10;
 }
+.skill-item{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.skill-img{
+  width: fit-content;
+  height: 60px;
+  text-align: left;
+}
 .tech-skills {
+  width: fit-content;
   height: 120px;
   text-align: left;
 }
@@ -183,6 +202,15 @@ img.img-profile {
 }
 .text-bootstrap {
   color: #7912f6;
+}
+.text-html{
+  color: #ff5722;
+}
+.text-css{
+  color: #2196f3;
+}
+.text-js{
+  color: #f7e018;
 }
 .bg-footer {
   background-color: #1e2833;
