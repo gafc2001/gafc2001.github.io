@@ -104,6 +104,7 @@ const english = {
     },
     "project" : {
         "title" : "Personal projects",
+        "note" : "The projects are deployed on heroku free plan, therefore it takes time to load the first time",
         "projects" : [
             //Online Restaurant
             {
@@ -120,12 +121,12 @@ const english = {
                     {
                         "name" : "Go to the repository",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/RestaurantFront"
                     },
                     {
                         "name" : "Go to the website",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://restaurant-line.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -160,12 +161,12 @@ const english = {
                     {
                         "name" : "Go to the repository",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/RestaurantApi"
                     },
                     {
                         "name" : "Go to the website",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://restaurantrestapi.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -195,12 +196,12 @@ const english = {
                     {
                         "name" : "Go to the repository",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/JuegaYa"
                     },
                     {
                         "name" : "Go to the website",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://juegaya.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -234,12 +235,12 @@ const english = {
                     {
                         "name" : "Go to the repository",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/citytours"
                     },
                     {
                         "name" : "Go to the website",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://citytours-web.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -272,12 +273,12 @@ const english = {
                     {
                         "name" : "Go to the repository",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/Website-ferreteria"
                     },
                     {
                         "name" : "Go to the website",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://tornillin.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -402,6 +403,7 @@ const spanish = {
     },
     "project" : {
         "title" : "Mis proyectos",
+        "note" : "Los proyectos estan desplegados en un plan gratis de heroku, por lo tanto demora en cargar la primera vez",
         "projects" : [
             //Online Restaurant
             {
@@ -418,12 +420,12 @@ const spanish = {
                     {
                         "name" : "Ir al repositorio",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/RestaurantFront"
                     },
                     {
                         "name" : "Ir a la pagina",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://restaurant-line.herokuapp.com/"
                     }
                 ],    
                 "technologies" : [
@@ -458,12 +460,12 @@ const spanish = {
                     {
                         "name" : "Ir al repositorio",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/RestaurantApi"
                     },
                     {
                         "name" : "Ir a la pagina",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://restaurantrestapi.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -493,12 +495,12 @@ const spanish = {
                     {
                         "name" : "Ir al repositorio",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/JuegaYa"
                     },
                     {
                         "name" : "Ir a la pagina",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://juegaya.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -532,12 +534,12 @@ const spanish = {
                     {
                         "name" : "Ir al repositorio",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/citytours"
                     },
                     {
                         "name" : "Ir a la pagina",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://citytours-web.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
@@ -570,12 +572,12 @@ const spanish = {
                     {
                         "name" : "Ir al repositorio",
                         "icon" : "fab fa-github",
-                        "url" : "http://github.com/"
+                        "url" : "https://github.com/gafc2001/Website-ferreteria"
                     },
                     {
                         "name" : "Ir a la pagina",
                         "icon" : "fas fa-globe",
-                        "url" : "https://github.com/gafc2001"
+                        "url" : "https://tornillin.herokuapp.com/"
                     }
                 ],
                 "technologies" : [
