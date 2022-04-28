@@ -11,9 +11,11 @@ export const Topbar = ({data,action}) => {
   const [prefLang,setPrefLang] = useState([getLanguageInfo(localLang).name,getLanguageInfo(localLang).image])
 
   const setGlobalPrefLang = (value) => {
-    action(value)
+    console.log(data)
     const findLang = getLanguageInfo(value)
     setPrefLang([findLang.name,findLang.image])
+    action(value)
+    console.log(data)
   }
   
   return (
