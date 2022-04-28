@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0bf22ea8.css",
+    "main.js": "/static/js/main.29b63caf.js",
+    "static/media/picture-1.png": "/static/media/picture-1.594802f9d374e41bed8a.png",
+    "static/media/picture-4.png": "/static/media/picture-4.a96399d1430f349569fd.png",
+    "static/media/picture-3.png": "/static/media/picture-3.057ced92136806c9db3f.png",
+    "static/media/picture-5.png": "/static/media/picture-5.2036ad05357990ff3afd.png",
+    "static/media/picture-6.png": "/static/media/picture-6.a3f459255214bb87be3f.png",
+    "static/media/picture-2.png": "/static/media/picture-2.8126d47926ea941a4d3d.png",
+    "static/media/picture-9.png": "/static/media/picture-9.77d4a49d390f53df4005.png",
+    "static/media/mysql.png": "/static/media/mysql.3c59322fa13f5ec643cb.png",
+    "static/media/banner.jpg": "/static/media/banner.04e9cc6bd3bdcbf41bb9.jpg",
+    "static/media/profile.jpg": "/static/media/profile.f1c5a896e80174c4b828.jpg",
+    "static/media/picture-10.png": "/static/media/picture-10.0e60e1780a63bfbe6532.png",
+    "static/media/picture-7.png": "/static/media/picture-7.cf4287edf4c82ec86025.png",
+    "static/media/php.png": "/static/media/php.7e003d56de2b441963e6.png",
+    "static/media/picture-8.png": "/static/media/picture-8.eed0041de6d63be388a2.png",
+    "static/media/spain-circle.png": "/static/media/spain-circle.fb459717d76cf87329e0.png",
+    "static/media/js.png": "/static/media/js.2e10b2a247e94504d12c.png",
+    "static/media/css.png": "/static/media/css.463e319bad8e0edf1ef7.png",
+    "static/media/html.png": "/static/media/html.ff3cf75e3b7cbb4ea77c.png",
+    "static/media/postgresql.svg": "/static/media/postgresql.ae92b576b8ea41666538.svg",
+    "static/media/laravel.svg": "/static/media/laravel.d0cb2f2a087d322fda99.svg",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.3a162f65200426203695.svg",
+    "static/media/spring.svg": "/static/media/spring.b701f1fccafd97e059e9.svg",
+    "index.html": "/index.html",
+    "static/media/react.svg": "/static/media/react.928f956d9c8ebcffb98a.svg",
+    "main.0bf22ea8.css.map": "/static/css/main.0bf22ea8.css.map",
+    "main.29b63caf.js.map": "/static/js/main.29b63caf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bf22ea8.css",
+    "static/js/main.29b63caf.js"
+  ]
+}
