@@ -1,0 +1,54 @@
+import React, { useState } from "react";
+
+import { Navbar } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
+import { DropdownButton } from "react-bootstrap";
+export const Topbar = ({data,action}) => {
+  const localLang = window.localStorage.getItem("lang")
+  const getLanguageInfo = (value) => data.languages.find( l => l.value == value)
+  const [prefLang,setPrefLang] = useState([getLanguageInfo(localLang).name,getLanguageInfo(localLang).image])
+
+  const setGlobalPrefLang = (value) => {
+    action(value)
+    const findLang = getLanguageInfo(value)
+    setPrefLang([findLang.name,findLang.image])
+  }
+  
+  return (
+    <header className="header fixed-top header-navbar" id="">
+      <Navbar bg="transparent" expand="lg">
+        <Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              {data.links.map(link => {
+                return(
+                  <Nav.Link key={link} className="text-light" href="#home">
+                    {link}
+                  </Nav.Link>
+                )
+              })}
+              <Dropdown className="mx-3 width-dropdown">
+                <Dropdown.Toggle variant="light" id="dropdown-basic">
+                  <img width="25" src={ require(`./../../assets/images/${prefLang[1]}`)}/>
+                  <span className="ms-2">{prefLang[0]}</span>
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  {data.languages.map( lang => 
+                    <Dropdown.Item key={lang.value} onClick={() => setGlobalPrefLang(lang.value)}>
+                      <img width="25" src={ require(`./../../assets/images/${lang.image}`)}/>
+                      <span className="ms-2">{lang.name}</span>
+                    </Dropdown.Item>)
+                  }
+                  
+                </Dropdown.Menu>
+              </Dropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
+};
