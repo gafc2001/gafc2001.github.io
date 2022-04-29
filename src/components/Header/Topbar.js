@@ -4,7 +4,7 @@ import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
-import { DropdownButton } from "react-bootstrap";
+import Scrollspy from 'react-scrollspy'
 export const Topbar = ({data,action}) => {
   const localLang = window.localStorage.getItem("lang")
   const getLanguageInfo = (value) => data.languages.find( l => l.value == value)
@@ -25,13 +25,15 @@ export const Topbar = ({data,action}) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              <Scrollspy className="d-flex m-0" items={ data.links.map( link => link.href) } currentClassName="active-link">
               {data.links.map(link => {
                 return(
-                  <Nav.Link key={link} className="text-light" href="#home">
-                    {link}
+                  <Nav.Link key={link.name} className="text-light" href={`#${link.href}`}>
+                    {link.name}
                   </Nav.Link>
                 )
               })}
+              </Scrollspy>
               <Dropdown className="mx-3 width-dropdown">
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
                   <img width="25" src={ require(`./../../assets/images/${prefLang[1]}`)}/>

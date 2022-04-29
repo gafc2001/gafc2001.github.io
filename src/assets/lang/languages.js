@@ -2,9 +2,18 @@ const english = {
     "header" : {
         "navbar" : {
             "links" : [
-                "Techskils",
-                "Personal projects",
-                "Contact me",
+                {
+                    "name" : "Techskils",
+                    "href" : "tech-section"
+                },
+                {
+                    "name" : "Personal projects",
+                    "href" : "project-section"
+                },
+                {
+                    "name" : "Contact me",
+                    "href" : "contact-section"
+                },
             ],
             "languages" : [
                 {
@@ -301,9 +310,18 @@ const spanish = {
     "header" : {
         "navbar" : {
             "links" : [
-                "Habilidades",
-                "Proyectos personales",
-                "Contactame",
+                {
+                    "name" : "Habilidades",
+                    "href" : "tech-section"
+                },
+                {
+                    "name" : "Proyectos personales",
+                    "href" : "project-section"
+                },
+                {
+                    "name" : "Contactame",
+                    "href" : "contact-section"
+                },
             ],
             "languages" : [
                 {

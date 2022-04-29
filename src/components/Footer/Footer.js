@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer className="section container-fluid text-light" id="contact">
+    <footer className="section container-fluid text-light" id="contact-section">
         <div className="row bg-footer p-5">
             <div className="container d-flex justify-content-around flex-wrap flex-column flex-md-row">
                 <a className="text-light link footer-link"
