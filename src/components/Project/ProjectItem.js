@@ -11,7 +11,7 @@ export const ProjectItem = ({ data }) => {
                 {data.paragraphs.map((item,it) => <p key={it}>{item}</p>)}
                 {data.links.map((link,it) => {
                     return (
-                        <div key={it} className="d-flex align-items-md-center flex-column flex-sm-row">
+                        <div key={it} className="project-links d-flex align-items-md-center flex-column flex-sm-row">
                             <p className="m-0 me-2 project-link-desc">
                                 {link.name}
                                 <i className="ms-2 fas fa-arrow-alt-circle-right"></i>
