@@ -5,26 +5,26 @@ export const Footer = () => {
     <footer className="section container-fluid text-light" id="contact-section">
         <Row className="bg-footer p-5">
             <Col lg="6">
-                <a className="text-light text-center link footer-link"
+                <a target="_blank"className="text-light text-center link footer-link"
                     href="https://www.linkedin.com/in/gustavo-farfan-coraje-64488b211/">
                     <i className="me-2 fab fa-linkedin"></i>
                     <span>linkedin.com/in/gustavo-farfan-coraje/</span>
                 </a>
             </Col>
             <Col lg="6">
-                <a className="text-light text-center link footer-link" href="mailto:farfancoraje15@gmail.com">
+                <a target="_blank"className="text-light text-center link footer-link" href="mailto:farfancoraje15@gmail.com">
                     <i className="me-2 fas fa-envelope"></i>
                     <span>farfancoraje15@gmail.com</span>
                 </a>
             </Col>
             <Col lg="6">
-                <a className="text-light text-center link footer-link" href="tel:910534484">
+                <a target="_blank"className="text-light text-center link footer-link" href="tel:910534484">
                     <i className="me-2 fas fa-phone"></i>
                     <span>+51 910534484</span>
                 </a>
             </Col>
             <Col lg="6">
-                <a className="text-light text-center link footer-link" href="https://github.com/gafc2001">
+                <a target="_blank"className="text-light text-center link footer-link" href="https://github.com/gafc2001">
                     <i className="me-2 fab fa-github"></i>
                     <span>github.com/gafc2001</span>
                 </a>
