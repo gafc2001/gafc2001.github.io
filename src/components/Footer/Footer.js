@@ -18,12 +18,6 @@ export const Footer = () => {
                 </a>
             </Col>
             <Col lg="6">
-                <a target="_blank"className="text-light text-center link footer-link" href="tel:910534484">
-                    <i className="me-2 fas fa-phone"></i>
-                    <span>+51 910534484</span>
-                </a>
-            </Col>
-            <Col lg="6">
                 <a target="_blank"className="text-light text-center link footer-link" href="https://github.com/gafc2001">
                     <i className="me-2 fab fa-github"></i>
                     <span>github.com/gafc2001</span>
