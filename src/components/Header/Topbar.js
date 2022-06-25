@@ -1,4 +1,4 @@
-import React, { useState,useEffect,useRef } from "react";
+import React, { useState,useEffect,useRef, useCallback } from "react";
 
 import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
@@ -13,13 +13,17 @@ export const Topbar = ({headerHeight}) => {
 
   const ref = useRef(null)
 
+  const getLanguageInfo = useCallback((value,array) => {
+    return array.find( l => l.value === value);
+  },[]);
 
-  const getLanguageInfo = (value) => data.languages.find( l => l.value == value)
-  const [prefLang,setPrefLang] = useState(getLanguageInfo(localStorage.getItem("lang")))
+  const [prefLang,setPrefLang] = useState(getLanguageInfo(localStorage.getItem("lang"),data.languages))
 
   useEffect(() => {
-      const findLang = getLanguageInfo(localStorage.getItem("lang"));
+      const findLang = getLanguageInfo(localStorage.getItem("lang"),data.languages);
       setPrefLang(findLang);
+      
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   },[data]);
   
   //Scrollspy
@@ -37,7 +41,7 @@ export const Topbar = ({headerHeight}) => {
       window.addEventListener('scroll', onScroll, { passive: true });
       
       return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [headerHeight]);
 
   return (
     <header className="header fixed-top header-navbar" ref={ref}>
@@ -57,13 +61,13 @@ export const Topbar = ({headerHeight}) => {
               </Scrollspy>
               <Dropdown className="mx-3 width-dropdown">
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  <img width="25" src={ require(`./../../assets/images/${prefLang.image}`)}/>
+                  <img width="25" src={ require(`./../../assets/images/${prefLang.image}`)} alt={prefLang.value}/>
                   <span className="ms-2">{prefLang.name}</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   {data.languages.map( lang => 
                     <Dropdown.Item key={lang.value} onClick={() => handleLanguageChange(lang.value)}>
-                      <img width="25" src={ require(`./../../assets/images/${lang.image}`)}/>
+                      <img width="25" src={ require(`./../../assets/images/${lang.image}`)} alt={lang.value}/>
                       <span className="ms-2">{lang.name}</span>
                     </Dropdown.Item>)
                   }
