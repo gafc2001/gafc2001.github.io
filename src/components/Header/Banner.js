@@ -1,10 +1,12 @@
-import React from 'react'
-
+import React from 'react';
+import useLanguage from '../../hooks/useLanguage';
 //Bootstrap components
-import { Row } from "react-bootstrap"
-import { Col } from "react-bootstrap"
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 export const Banner = (props) => {
+  const language = useLanguage();
+  console.log(language);
   const data = props.data
   return (
     <div className="presentation h-100 mt-5">

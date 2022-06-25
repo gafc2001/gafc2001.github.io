@@ -1,10 +1,13 @@
 import {Index} from './pages/Index'
+import LanguageState from './context/Language/LanguageState';
 function App() {
-  if(!window.localStorage.getItem("lang")) window.localStorage.setItem("lang","en")
+  localStorage.getItem("lang") || localStorage.setItem("lang","en")
   return (
+    <LanguageState>
     <div className="App">
       <Index/>
     </div>
+    </LanguageState>
   );
 }
 
