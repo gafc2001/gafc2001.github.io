@@ -15,8 +15,8 @@ export const Index = () => {
   return (
     <>
         <Header data={lang.header} action={selectLanguage}/>
-        <Skill data={lang.skills}/>
-        <Project data={lang.project}/>
+        <Skill/>
+        <Project/>
         <Footer/>
     </>
   )
