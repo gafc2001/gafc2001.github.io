@@ -4,9 +4,9 @@ function App() {
   localStorage.getItem("lang") || localStorage.setItem("lang","en")
   return (
     <LanguageState>
-    <div className="App">
-      <Index/>
-    </div>
+      <div className="App">
+        <Index/>
+      </div>
     </LanguageState>
   );
 }

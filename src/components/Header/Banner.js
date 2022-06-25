@@ -6,7 +6,6 @@ import { Col } from "react-bootstrap";
 
 export const Banner = (props) => {
   const language = useLanguage();
-  console.log(language);
   const data = props.data
   return (
     <div className="presentation h-100 mt-5">
