@@ -11,31 +11,27 @@ export const Topbar = ({headerHeight}) => {
   const {lang,handleLanguageChange} = useLanguage();
   const data = lang.header.navbar;
 
-  // const [height,setHeight] = useState(0)
   const ref = useRef(null)
 
-  const localLang = window.localStorage.getItem("lang")
-  const getLanguageInfo = (value) => data.languages.find( l => l.value == value)
-  const [prefLang,setPrefLang] = useState([getLanguageInfo(localLang).name,getLanguageInfo(localLang).image])
 
-  const setGlobalPrefLang = (value) => {
-    const findLang = getLanguageInfo(value)
-    setPrefLang([findLang.name,findLang.image])
-    handleLanguageChange(value)
-  }
-  
-  const [offset, setOffset] = useState(0);
+  const getLanguageInfo = (value) => data.languages.find( l => l.value == value)
+  const [prefLang,setPrefLang] = useState(getLanguageInfo(localStorage.getItem("lang")))
 
   useEffect(() => {
+      const findLang = getLanguageInfo(localStorage.getItem("lang"));
+      setPrefLang(findLang);
+  },[data]);
+  
+  //Scrollspy
+  useEffect(() => {
       const onScroll = () => {
-        setOffset(window.pageYOffset);
         if(window.pageYOffset+ref.current.clientHeight >= headerHeight.current.clientHeight){
           ref.current.classList.add("header-offset")
         }else{
           ref.current.classList.remove("header-offset")
         }
       }
-      // setHeight(ref.current.clientHeight)
+      
       // clean up code
       window.removeEventListener('scroll', onScroll);
       window.addEventListener('scroll', onScroll, { passive: true });
@@ -61,12 +57,12 @@ export const Topbar = ({headerHeight}) => {
               </Scrollspy>
               <Dropdown className="mx-3 width-dropdown">
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  <img width="25" src={ require(`./../../assets/images/${prefLang[1]}`)}/>
-                  <span className="ms-2">{prefLang[0]}</span>
+                  <img width="25" src={ require(`./../../assets/images/${prefLang.image}`)}/>
+                  <span className="ms-2">{prefLang.name}</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   {data.languages.map( lang => 
-                    <Dropdown.Item key={lang.value} onClick={() => setGlobalPrefLang(lang.value)}>
+                    <Dropdown.Item key={lang.value} onClick={() => handleLanguageChange(lang.value)}>
                       <img width="25" src={ require(`./../../assets/images/${lang.image}`)}/>
                       <span className="ms-2">{lang.name}</span>
                     </Dropdown.Item>)
