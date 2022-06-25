@@ -20,6 +20,26 @@ export const Banner = () => {
           <div className="ps-3 border-4 border-start border-custom fs-5">
             {data.paragraphs.map( (paragraph,index) => <p key={index} >{paragraph}</p>)}
           </div>
+          <div className="socialmedia-links">
+            <ul className="list-inline">
+              <li className='banner-link list-inline-item'>
+                <a target="_blank"className="text-light text-center d-inline-block link"
+                    href="https://www.linkedin.com/in/gustavo-farfan-coraje-64488b211/">
+                    <i className="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li className='banner-link list-inline-item'>
+                <a target="_blank" className="text-light text-center d-inline-block link" href="mailto:farfancoraje15@gmail.com">
+                  <i className="fas fa-envelope"></i>
+                </a>
+              </li>
+              <li className='banner-link list-inline-item'>
+                <a target="_blank"className="text-light text-center d-inline-block link" href="https://github.com/gafc2001">
+                  <i className="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </Col>
         <Col lg="4" className="d-flex">
           <div className="mx-lg-5 text-center w-100">
