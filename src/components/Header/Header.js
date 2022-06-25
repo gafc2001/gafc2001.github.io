@@ -9,7 +9,7 @@ export const Header = ({data,action}) => {
     <section className="banner pb-2" ref={ref}>
         <div className="container-sm position-relative pt-4 info h-100">
             <Topbar data={data.navbar} action={action} headerHeight={ref}/>
-            <Banner data={data.banner}/>
+            <Banner/>
         </div>
     </section>
   )

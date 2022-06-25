@@ -4,9 +4,10 @@ import useLanguage from '../../hooks/useLanguage';
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 
-export const Banner = (props) => {
-  const language = useLanguage();
-  const data = props.data
+export const Banner = () => {
+  const {lang} = useLanguage();
+  
+  const data = lang.header.banner;
   return (
     <div className="presentation h-100 mt-5">
       <Row className="h-100 align-items-lg-center">

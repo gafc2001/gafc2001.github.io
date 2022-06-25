@@ -4,7 +4,7 @@ import {language} from './../../assets/lang/languages';
 const UserState = (props) => {
     const prefLanguage = localStorage.getItem("lang");
     const [lang, setLang] = useState(language[prefLanguage]);
-    const selectLanguage = (value) => {
+    const handleLanguageChange = (value) => {
         localStorage.setItem("lang", value);
         setLang(language[value]);
     };
@@ -12,7 +12,7 @@ const UserState = (props) => {
         <LanguageContext.Provider
         value={{
             lang,
-            selectLanguage,
+            handleLanguageChange,
         }}
         >
         {props.children}

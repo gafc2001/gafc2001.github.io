@@ -5,9 +5,13 @@ import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
 import Scrollspy from 'react-scrollspy'
-export const Topbar = ({data,action,headerHeight}) => {
+import useLanguage from "../../hooks/useLanguage";
+export const Topbar = ({headerHeight}) => {
 
-  const [height,setHeight] = useState(0)
+  const {lang,handleLanguageChange} = useLanguage();
+  const data = lang.header.navbar;
+
+  // const [height,setHeight] = useState(0)
   const ref = useRef(null)
 
   const localLang = window.localStorage.getItem("lang")
@@ -17,7 +21,7 @@ export const Topbar = ({data,action,headerHeight}) => {
   const setGlobalPrefLang = (value) => {
     const findLang = getLanguageInfo(value)
     setPrefLang([findLang.name,findLang.image])
-    action(value)
+    handleLanguageChange(value)
   }
   
   const [offset, setOffset] = useState(0);
@@ -31,7 +35,7 @@ export const Topbar = ({data,action,headerHeight}) => {
           ref.current.classList.remove("header-offset")
         }
       }
-      setHeight(ref.current.clientHeight)
+      // setHeight(ref.current.clientHeight)
       // clean up code
       window.removeEventListener('scroll', onScroll);
       window.addEventListener('scroll', onScroll, { passive: true });
