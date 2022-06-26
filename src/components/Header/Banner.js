@@ -23,18 +23,18 @@ export const Banner = () => {
           <div className="socialmedia-links">
             <ul className="list-inline">
               <li className='banner-link list-inline-item'>
-                <a target="_blank"className="text-light text-center d-inline-block link"
+                <a rel="noopener noreferrer" target="_blank"className="text-light text-center d-inline-block link"
                     href="https://www.linkedin.com/in/gustavo-farfan-coraje-64488b211/">
                     <i className="fab fa-linkedin"></i>
                 </a>
               </li>
               <li className='banner-link list-inline-item'>
-                <a target="_blank" className="text-light text-center d-inline-block link" href="mailto:farfancoraje15@gmail.com">
+                <a rel="noopener noreferrer" target="_blank" className="text-light text-center d-inline-block link" href="mailto:farfancoraje15@gmail.com">
                   <i className="fas fa-envelope"></i>
                 </a>
               </li>
               <li className='banner-link list-inline-item'>
-                <a target="_blank"className="text-light text-center d-inline-block link" href="https://github.com/gafc2001">
+                <a rel="noopener noreferrer" target="_blank"className="text-light text-center d-inline-block link" href="https://github.com/gafc2001">
                   <i className="fab fa-github"></i>
                 </a>
               </li>

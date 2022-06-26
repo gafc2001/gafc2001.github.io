@@ -16,7 +16,7 @@ export const ProjectItem = ({ data }) => {
                                 {link.name}
                                 <i className="ms-2 fas fa-arrow-alt-circle-right"></i>
                             </p>
-                            <a target="_blank" className="project-link bg-primary my-2"
+                            <a rel="noopener noreferrer" target="_blank" className="project-link bg-primary my-2"
                                 href={link.url}>
                                 <i className={`me-1 ${link.icon}`}></i>
                                 <span>{link.url}</span>
@@ -29,7 +29,7 @@ export const ProjectItem = ({ data }) => {
                     {data.technologies.map((tech,it) => 
                         <div key={it}>
                             <img src={require(`./../../assets/images/technologies/${tech}`)} alt={tech}
-                                className={`tech-img ${tech==+"react.svg"?"bg-dark":""} p-3 rounded-custom`} />
+                                className={`tech-img ${tech==="react.svg"?"bg-dark":""} p-3 rounded-custom`} />
                         </div>
                     )}
                 </div>
@@ -39,7 +39,7 @@ export const ProjectItem = ({ data }) => {
                 <div onClick={() => setToggler(!toggler)} 
                         className="gallery my-auto">
                     <img src={require(`./../../assets/images/projects/${data.gallery[0]}`)}
-                        className="img-fluid rounded shadow-lg"/>
+                        className="img-fluid rounded shadow-lg" alt="webpage"/>
                     <div className="gallery-overlay rounded">
                         <span className="gallery-button">{data.extras.button_gallery_text}</span>
                     </div>
