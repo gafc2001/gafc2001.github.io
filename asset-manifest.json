@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.679b94d3.css",
-    "main.js": "/static/js/main.17438825.js",
+    "main.css": "/static/css/main.9d9582d5.css",
+    "main.js": "/static/js/main.e014f59d.js",
     "static/media/picture-1.png": "/static/media/picture-1.594802f9d374e41bed8a.png",
     "static/media/picture-4.png": "/static/media/picture-4.a96399d1430f349569fd.png",
     "static/media/picture-3.png": "/static/media/picture-3.057ced92136806c9db3f.png",
@@ -27,14 +27,14 @@
     "static/media/postgresql.svg": "/static/media/postgresql.ae92b576b8ea41666538.svg",
     "static/media/laravel.svg": "/static/media/laravel.d0cb2f2a087d322fda99.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.3a162f65200426203695.svg",
-    "static/media/spring.svg": "/static/media/spring.b701f1fccafd97e059e9.svg",
     "index.html": "/index.html",
+    "static/media/spring.svg": "/static/media/spring.b701f1fccafd97e059e9.svg",
     "static/media/react.svg": "/static/media/react.3a03708e42481565259f.svg",
-    "main.679b94d3.css.map": "/static/css/main.679b94d3.css.map",
-    "main.17438825.js.map": "/static/js/main.17438825.js.map"
+    "main.9d9582d5.css.map": "/static/css/main.9d9582d5.css.map",
+    "main.e014f59d.js.map": "/static/js/main.e014f59d.js.map"
   },
   "entrypoints": [
-    "static/css/main.679b94d3.css",
-    "static/js/main.17438825.js"
+    "static/css/main.9d9582d5.css",
+    "static/js/main.e014f59d.js"
   ]
 }
