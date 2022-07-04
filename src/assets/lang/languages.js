@@ -325,6 +325,21 @@ const english = {
             }
         }
         
+    },
+    "footer" : {
+        "paragraphs" : [
+            "I am a software developer, currently I studying Software Engineering.",
+            "I love to create applications where I can solve problems. That's why I am looking for proyects where I can use my knowledge and allows me to grow professionally"
+        ],
+        "explore" : {
+            "title" : "Explore",
+        },
+        "projects" : {
+            "title" : "Projects",
+        },
+        "contact" : {
+            "title" : "Get in touch",
+        }
     }
 }
 const spanish = {
@@ -655,6 +670,21 @@ const spanish = {
             }
         }
         
+    },
+    "footer" : {
+        "paragraphs" : [
+            "Soy un desarrollador de software, actualmente estoy estudiando Ingeniería de Software",
+            "Me encanta crear aplicaciones en la que pueda solucionar un problema. Para ello busco proyectos en la que pueda aplicar mis conocimientos y me permita crecer profesionalmente"
+        ],
+        "explore" : {
+            "title" : "Explorar",
+        },
+        "projects" : {
+            "title" : "Proyectos",
+        },
+        "contact" : {
+            "title" : "Contactame",
+        }
     }
 }
 

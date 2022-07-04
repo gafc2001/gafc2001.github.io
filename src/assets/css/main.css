@@ -257,15 +257,21 @@ img.img-profile {
 }
 
 .footer-link {
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.fit-content{
+  width: fit-content;
+}
+.center-x{
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 1.3rem;
 }
-
 .footer-link:hover {
-  background-color: white;
-  color: black !important;
+  text-decoration: underline;
 }
 
 /* .project-links{
