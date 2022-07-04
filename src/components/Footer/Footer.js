@@ -1,15 +1,13 @@
 import React from 'react'
 import {Row, Col } from 'react-bootstrap'
-import { language } from '../../assets/lang/languages';
 import useLanguage from './../../hooks/useLanguage';
 export const Footer = () => {
     const {lang} = useLanguage();
     const year = new Date().getFullYear();
-    console.log(year);
     return (
     <footer className="section container-fluid text-light" id="contact-section">
         <Row className="bg-footer p-5">
-            <Col md="4">
+            <Col md="3">
                 <h5 className="d-flex align-items-center">
                     <img src={`${process.env.PUBLIC_URL}/favicon.png`} alt="icon" className='img-fluid' width="40"/>
                     <span className="h3 m-0 ms-1">GAFC2001</span>
@@ -18,9 +16,17 @@ export const Footer = () => {
                     {lang.footer.paragraphs.map( e => (<p>{e}</p>))}
                 </div>
             </Col>
-            <Col md="4" className="center-x">
+            <Col md="3" className="center-x">
                 <div className="fit-content">
                     <h5>{lang.footer.explore.title}</h5>
+                    {lang.footer.explore.links.map( link => {
+                        return (<a className="text-light footer-link" href={link.href}>{link.name}</a>)
+                    })}
+                </div>
+            </Col>
+            <Col md="3" className="center-x">
+                <div className="fit-content">
+                    <h5>{lang.footer.contact.title}</h5>
                     <a rel="noopener noreferrer" target="_blank"className="text-light footer-link"
                         href="https://www.linkedin.com/in/gustavo-farfan-coraje-64488b211/">
                         <i className="me-2 fab fa-linkedin"></i>
@@ -36,8 +42,7 @@ export const Footer = () => {
                     </a>
                 </div>
             </Col>
-            
-            <Col md="4" className="center-x">
+            <Col md="3" className="center-x">
                 <div className='fit-content'>
                     <h5>{lang.footer.projects.title}</h5>
                     <div>

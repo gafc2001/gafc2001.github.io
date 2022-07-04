@@ -333,6 +333,20 @@ const english = {
         ],
         "explore" : {
             "title" : "Explore",
+            "links" : [
+                {
+                    "name" : "Techskils",
+                    "href" : "tech-section"
+                },
+                {
+                    "name" : "Personal projects",
+                    "href" : "project-section"
+                },
+                {
+                    "name" : "Contact me",
+                    "href" : "contact-section"
+                },
+            ],
         },
         "projects" : {
             "title" : "Projects",
@@ -678,6 +692,20 @@ const spanish = {
         ],
         "explore" : {
             "title" : "Explorar",
+            "links" : [
+                {
+                    "name" : "Habilidades",
+                    "href" : "tech-section"
+                },
+                {
+                    "name" : "Proyectos personales",
+                    "href" : "project-section"
+                },
+                {
+                    "name" : "Contactame",
+                    "href" : "contact-section"
+                },
+            ],
         },
         "projects" : {
             "title" : "Proyectos",
