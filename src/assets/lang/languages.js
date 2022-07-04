@@ -304,7 +304,28 @@ const english = {
                 ]
             },
         ]
-    }     
+    },
+    "contact" : {
+        "title" : "Let's work together",
+        "fields" : {
+            "name" : {
+                "title" : "Full Name",
+                "placeholder" : "Your full name"
+            },
+            "email" : {
+                "title" : "Email Address",
+                "placeholder" : "E.g. user@example.com"
+            },
+            "message" : {
+                "title" : "Your message",
+                "placeholder" : "Your message"
+            },
+            "button" : {
+                "title" : "Submit"
+            }
+        }
+        
+    }
 }
 const spanish = {
     "header" : {
@@ -613,7 +634,28 @@ const spanish = {
                 
             },
         ]        
-    }     
+    },    
+    "contact" : {
+        "title" : "Trabajemos juntos",
+        "fields" : {
+            "name" : {
+                "title" : "Nombres",
+                "placeholder" : "Tus nombres"
+            },
+            "email" : {
+                "title" : "Correo",
+                "placeholder" : "Ej. usuario@ejemplo.com"
+            },
+            "message" : {
+                "title" : "Mesanje",
+                "placeholder" : "Tu mensaje"
+            },
+            "button" : {
+                "title" : "Enviar"
+            }
+        }
+        
+    }
 }
 
 export const language = {

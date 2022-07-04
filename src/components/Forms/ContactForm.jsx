@@ -4,7 +4,7 @@ import { Section } from './../Section';
 
 import programming from './../../assets/images/i3.webp';
 import { sendMessage } from '../../services/Message';
-
+import useLanguage from './../../hooks/useLanguage';
 
 export const ContactForm = () => {
 
@@ -14,6 +14,7 @@ export const ContactForm = () => {
         "message" : '',
     }
 
+    const { lang} = useLanguage();
     const [formdata, setFormdata] = useState(initialState);
     const [validate,setValidate] = useState(false);
 
@@ -42,24 +43,24 @@ export const ContactForm = () => {
     
 
     return (
-        <Section title="Contact">
+        <Section title={lang.contact.title}>
             <Row>
                 <Col className="mx-5">
                     <Form validated={validate} onSubmit={handleSubmit}>
                         <Form.Group className="mb-3" controlId="formName">
-                            <Form.Label>Name</Form.Label>
-                            <Form.Control name="name" onChange={(e) => handleInputChange(e)} type="text" placeholder="Your name" required value={formdata.name}/>
+                            <Form.Label>{lang.contact.fields.name.title}</Form.Label>
+                            <Form.Control name="name" onChange={(e) => handleInputChange(e)} type="text" placeholder={lang.contact.fields.name.placeholder} required value={formdata.name}/>
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control name="email" onChange={(e) => handleInputChange(e)}  type="email" placeholder="Enter email" required value={formdata.email}/>
+                            <Form.Label>{lang.contact.fields.email.title}</Form.Label>
+                            <Form.Control name="email" onChange={(e) => handleInputChange(e)}  type="email" placeholder={lang.contact.fields.email.placeholder} required value={formdata.email}/>
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Mensaje</Form.Label>
-                            <Form.Control name="message" onChange={(e) => handleInputChange(e)}  as="textarea" placeholder="Tu mensaje" required value={formdata.message}/>
+                            <Form.Label>{lang.contact.fields.message.title}</Form.Label>
+                            <Form.Control name="message" onChange={(e) => handleInputChange(e)}  as="textarea" placeholder={lang.contact.fields.message.placeholder} required value={formdata.message}/>
                         </Form.Group>
                         <Button variant="primary" type="submit" ref={button}>
-                            <span>Submit</span>
+                            <span>{lang.contact.fields.button.title}</span>
                             {loading && (
                                 <Spinner
                                 className="ms-2"
