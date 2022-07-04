@@ -14,7 +14,6 @@ const increaseVisit = async () => {
                                 }
                             })
                             .catch(err => {
-                                console.log("Error : "+err);
                                 return {
                                     'ip_address' : '0.0.0.0',
                                     'country' : 'anonymous',
@@ -29,8 +28,6 @@ const increaseVisit = async () => {
             localStorage.setItem('visitor',JSON.stringify(json.data));
         })
         .catch(err => console.log("Error : "+err));
-
-        console.log('n');
     }
     
 }

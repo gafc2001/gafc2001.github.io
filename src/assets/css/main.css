@@ -95,11 +95,12 @@ img.img-profile {
   display: flex;
   justify-content: flex-end;
   padding: 10px 0;
-  transition: .4s ease-in-out;
+  transition: .3s ease-in-out;
+  background-color: #08082b96;
 }
 
 .header-offset {
-  background-color: #000e27;
+  background-color: #000011;
 }
 
 .info {
@@ -120,6 +121,7 @@ img.img-profile {
   font-weight: bold;
   padding: 10px 20px;
   font-size: 1.1rem;
+  transition: .2s ease-in-out;
 }
 
 .rounded-custom {
@@ -127,12 +129,12 @@ img.img-profile {
 }
 
 .active-link {
-  background-color: white;
-  color: black !important;
+  color: #fff !important;
+  border-bottom: 4px solid #fff;
 }
 
-.nav-link {
-  border-radius: 10px;
+.nav-link:hover {
+  border-bottom: 4px solid #fff;
 }
 
 .width-dropdown {
@@ -371,10 +373,10 @@ img.img-profile {
 }
 
 .bg-footer {
-  background-color: #1e2833;
+  background-color: #000011;
   row-gap: 4rem;
 }
 
 .bg-footer-secondary {
-  background-color: #11171d;
+  background-color: rgb(24, 24, 40);
 }
