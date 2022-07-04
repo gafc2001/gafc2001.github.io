@@ -8,7 +8,7 @@ export const ProjectItem = ({ data }) => {
         <Row className="border-2 border-bottom border-primary mb-5 pb-5">
             <Col lg="7" className="mb-3">
                 <h3>{data.title}</h3>
-                {data.paragraphs.map((item,it) => <p key={it}>{item}</p>)}
+                {data.paragraphs.map((item,it) => <p className="paragraph" key={it}>{item}</p>)}
                 {data.links.map((link,it) => {
                     return (
                         <div key={it} className="project-links d-flex align-items-md-center flex-column flex-sm-row">

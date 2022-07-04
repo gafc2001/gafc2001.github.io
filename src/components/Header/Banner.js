@@ -18,7 +18,7 @@ export const Banner = () => {
           <p className="font-monospace fs-5 fw-light text-typing"><span className="purple">print</span>(<span
             className="string">"Software Developer"</span>)</p>
           <div className="ps-3 border-4 border-start border-custom fs-5">
-            {data.paragraphs.map( (paragraph,index) => <p key={index} >{paragraph}</p>)}
+            {data.paragraphs.map( (paragraph,index) => <p className="paragraph" key={index} >{paragraph}</p>)}
           </div>
           <div className="socialmedia-links">
             <ul className="list-inline">

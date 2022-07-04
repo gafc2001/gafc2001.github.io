@@ -46,7 +46,7 @@ export const ContactForm = () => {
         <Section title={lang.contact.title}>
             <Row>
                 <Col className="mx-5">
-                    <Form validated={validate} onSubmit={handleSubmit}>
+                    <Form validated={validate} onSubmit={handleSubmit} className="paragraph">
                         <Form.Group className="mb-3" controlId="formName">
                             <Form.Label>{lang.contact.fields.name.title}</Form.Label>
                             <Form.Control name="name" onChange={(e) => handleInputChange(e)} type="text" placeholder={lang.contact.fields.name.placeholder} required value={formdata.name}/>
