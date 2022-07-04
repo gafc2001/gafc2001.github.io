@@ -147,6 +147,10 @@ img.img-profile {
 .width-dropdown button {
   width: 100%;
 }
+.width-dropdown .dropdown-menu{
+  min-width: 132px;
+  margin-left: -1px;
+}
 
 .purple {
   color: rgb(219, 0, 219);
@@ -266,10 +270,13 @@ img.img-profile {
 .fit-content{
   width: fit-content;
 }
-.center-x{
-  display: flex;
-  justify-content: center;
+@media (min-width: 992px) {
+  .center-x{
+    display: flex;
+    justify-content: center;
+  }  
 }
+
 .footer-link:hover {
   text-decoration: underline;
 }
@@ -383,7 +390,7 @@ img.img-profile {
 
 .bg-footer {
   background-color: rgb(24, 24, 40);
-  row-gap: 4rem;
+  row-gap: 2rem;
 }
 
 .bg-footer-secondary {

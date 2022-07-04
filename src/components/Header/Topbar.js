@@ -46,20 +46,20 @@ export const Topbar = ({headerHeight}) => {
   return (
     <header className="header fixed-top header-navbar" ref={ref}>
       <Navbar bg="transparent" variant="dark" expand="md">
-        <Container>
+        <Container className="justify-content-end">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Scrollspy className="d-flex m-0 flex-column flex-md-row ps-3" items={ data.links.map( link => link.href) } currentClassName="active-link">
+              <Scrollspy className="d-flex m-0 flex-column flex-md-row ps-3 pe-3" items={ data.links.map( link => link.href) } currentClassName="active-link">
               {data.links.map(link => {
                 return(
-                  <Nav.Link key={link.name} className="text-light p-1 ms-2" href={`#${link.href}`}>
+                  <Nav.Link key={link.name} className="text-light p-1 ms-2 text-end" href={`#${link.href}`}>
                     {link.name}
                   </Nav.Link>
                 )
               })}
               </Scrollspy>
-              <Dropdown className="mx-3 width-dropdown">
+              <Dropdown className="mx-3 width-dropdown ms-auto mt-2 mt-md-0">
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
                   <img width="25" src={ require(`./../../assets/images/${prefLang.image}`)} alt={prefLang.value}/>
                   <span className="ms-2">{prefLang.name}</span>

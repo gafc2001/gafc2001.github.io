@@ -43,7 +43,7 @@ export const ContactForm = () => {
     
 
     return (
-        <Section title={lang.contact.title}>
+        <Section title={lang.contact.title} id="contact-section">
             <Row>
                 <Col className="mx-5">
                     <Form validated={validate} onSubmit={handleSubmit} className="paragraph">

@@ -5,7 +5,7 @@ export const Footer = () => {
     const {lang} = useLanguage();
     const year = new Date().getFullYear();
     return (
-    <footer className="section container-fluid text-light" id="contact-section">
+    <footer className="section container-fluid text-light">
         <Row className="bg-footer p-5">
             <Col md="3">
                 <h5 className="d-flex align-items-center">
