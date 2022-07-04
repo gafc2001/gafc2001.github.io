@@ -382,10 +382,10 @@ img.img-profile {
 }
 
 .bg-footer {
-  background-color: #000011;
+  background-color: rgb(24, 24, 40);
   row-gap: 4rem;
 }
 
 .bg-footer-secondary {
-  background-color: rgb(24, 24, 40);
+  background-color: #000011;
 }
