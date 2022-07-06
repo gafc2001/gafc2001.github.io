@@ -50,7 +50,9 @@ export const Topbar = ({headerHeight}) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Scrollspy className="d-flex m-0 flex-column flex-md-row ps-3 pe-3" items={ data.links.map( link => link.href) } currentClassName="active-link">
+              <Scrollspy className="d-flex m-0 flex-column flex-md-row ps-3 pe-3"
+                         items={ data.links.map( link => link.href) } 
+                         currentClassName="active-link">
               {data.links.map(link => {
                 return(
                   <Nav.Link key={link.name} className="text-light p-1 ms-2 text-end" href={`#${link.href}`}>

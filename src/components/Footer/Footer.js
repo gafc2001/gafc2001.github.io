@@ -20,7 +20,7 @@ export const Footer = () => {
                 <div className="fit-content">
                     <h5>{lang.footer.explore.title}</h5>
                     {lang.footer.explore.links.map( link => {
-                        return (<a className="text-light footer-link" href={link.href}>{link.name}</a>)
+                        return (<a className="text-light footer-link" href={`#${link.href}`}>{link.name}</a>)
                     })}
                 </div>
             </Col>
@@ -34,7 +34,7 @@ export const Footer = () => {
                     </a>
                     <a rel="noopener noreferrer" target="_blank"className="text-light footer-link" href="mailto:farfancoraje15@gmail.com">
                         <i className="me-2 fas fa-envelope"></i>
-                        <span>Email</span>
+                        <span>farfancoraje15@gmail.com</span>
                     </a>
                     <a rel="noopener noreferrer" target="_blank"className="text-light footer-link" href="https://github.com/gafc2001">
                         <i className="me-2 fab fa-github"></i>
