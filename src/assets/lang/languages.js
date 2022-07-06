@@ -303,14 +303,79 @@ const english = {
                     'tornillin/picture-3.png',
                 ]
             },
+            //Bienes y Raices
+            {
+                "title" : "Bines y Raices",
+                "paragraphs" : [
+                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                ],
+                "extras" : {
+                    "button_gallery_text" : "See Gallery",
+                    "techs_text" : "Used Technologies"
+                },
+                "links" : [
+                    {
+                        "name" : "Go to the repository",
+                        "icon" : "fab fa-github",
+                        "url" : "https://github.com/gafc2001/bienes-raices"
+                    },
+                    {
+                        "name" : "Go to the website",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://bienes-raices-online.netlify.app/"
+                    }
+                ],
+                "technologies" : [
+                    "html.png",
+                    "css.png",
+                ],
+                "gallery" : [
+                    'bienes-raices/picture-1.png',
+                    'bienes-raices/picture-2.png',
+                    'bienes-raices/picture-3.png',
+                    'bienes-raices/picture-4.png',
+                ]
+            },
+            //Frontend Store
+            {
+                "title" : "Frontend Store",
+                "paragraphs" : [
+                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                ],
+                "extras" : {
+                    "button_gallery_text" : "See Gallery",
+                    "techs_text" : "Used Technologies"
+                },
+                "links" : [
+                    {
+                        "name" : "Go to the repository",
+                        "icon" : "fab fa-github",
+                        "url" : "https://github.com/gafc2001/store-grid"
+                    },
+                    {
+                        "name" : "Go to the website",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://store-online-grid.netlify.app/"
+                    }
+                ],
+                "technologies" : [
+                    "html.png",
+                    "css.png",
+                ],
+                "gallery" : [
+                    'grid-store/picture-1.png',
+                    'grid-store/picture-2.png',
+                    'grid-store/picture-3.png',
+                ]
+            },
         ]
     },
     "contact" : {
         "title" : "Let's work together",
         "fields" : {
             "name" : {
-                "title" : "Full Name",
-                "placeholder" : "Your full name"
+                "title" : "Names",
+                "placeholder" : "Your name"
             },
             "email" : {
                 "title" : "Email Address",
@@ -662,6 +727,71 @@ const spanish = {
                 ]
                 
             },
+            //Bienes y Raices
+            {
+                "title" : "Bines y Raices",
+                "paragraphs" : [
+                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                ],
+                "extras" : {
+                    "button_gallery_text" : "See Gallery",
+                    "techs_text" : "Used Technologies"
+                },
+                "links" : [
+                    {
+                        "name" : "Go to the repository",
+                        "icon" : "fab fa-github",
+                        "url" : "https://github.com/gafc2001/bienes-raices"
+                    },
+                    {
+                        "name" : "Go to the website",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://bienes-raices-online.netlify.app/"
+                    }
+                ],
+                "technologies" : [
+                    "html.png",
+                    "css.png",
+                ],
+                "gallery" : [
+                    'bienes-raices/picture-1.png',
+                    'bienes-raices/picture-2.png',
+                    'bienes-raices/picture-3.png',
+                    'bienes-raices/picture-4.png',
+                ]
+            },
+            //Frontend Store
+            {
+                "title" : "Frontend Store",
+                "paragraphs" : [
+                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                ],
+                "extras" : {
+                    "button_gallery_text" : "See Gallery",
+                    "techs_text" : "Used Technologies"
+                },
+                "links" : [
+                    {
+                        "name" : "Go to the repository",
+                        "icon" : "fab fa-github",
+                        "url" : "https://github.com/gafc2001/store-grid"
+                    },
+                    {
+                        "name" : "Go to the website",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://store-online-grid.netlify.app/"
+                    }
+                ],
+                "technologies" : [
+                    "html.png",
+                    "css.png",
+                ],
+                "gallery" : [
+                    'grid-store/picture-1.png',
+                    'grid-store/picture-2.png',
+                    'grid-store/picture-3.png',
+                ]
+            },
         ]        
     },    
     "contact" : {
@@ -676,7 +806,7 @@ const spanish = {
                 "placeholder" : "Ej. usuario@ejemplo.com"
             },
             "message" : {
-                "title" : "Mesanje",
+                "title" : "Mensaje",
                 "placeholder" : "Tu mensaje"
             },
             "button" : {
