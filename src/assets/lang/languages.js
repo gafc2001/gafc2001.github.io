@@ -331,7 +331,7 @@ const english = {
             {
                 "title" : "Bienes y Raices",
                 "paragraphs" : [
-                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                    "It is a website for sale of luxury homes and apartments. You will be able to see the incredible homes that we have. The website is made with HTML and CSS",
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -369,7 +369,7 @@ const english = {
             {
                 "title" : "Frontend Store",
                 "paragraphs" : [
-                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                    "It is a static web page made with HTML and CSS, I used CSS Grid to distribute the different elements.",
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -784,7 +784,7 @@ const spanish = {
             {
                 "title" : "Bienes y Raices",
                 "paragraphs" : [
-                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                    "Es una pagina web de venta de casas y departamentos de lujo. Podras ver las increibles propiedades que tenemos. La pagina esta hecho con HTML y CSS",
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -822,7 +822,7 @@ const spanish = {
             {
                 "title" : "Frontend Store",
                 "paragraphs" : [
-                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                    "Es una pagina web estica hecha con HTML y CSS, utilize CSS Grid para distribuir los diferentes elementos.",
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
