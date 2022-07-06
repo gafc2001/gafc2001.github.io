@@ -35,13 +35,20 @@ export const ProjectItem = ({ data }) => {
                 </div>
             </Col>
             <Col lg="5">
-                
-                <div onClick={() => setToggler(!toggler)} 
-                        className="gallery my-auto">
+                <div className="gallery my-auto">
                     <img src={require(`./../../assets/images/projects/${data.gallery[0]}`)}
                         className="img-fluid rounded shadow-lg" alt="webpage"/>
                     <div className="gallery-overlay rounded">
-                        <span className="gallery-button">{data.extras.button_gallery_text}</span>
+                        <span onClick={() => setToggler(!toggler)} className="gallery-button">
+                            <i className={`me-1 ${data.gallery_buttons.gallery.icon}`}></i>
+                            {data.gallery_buttons.gallery.name}
+                        </span>
+                        <span className="gallery-button">
+                            <a href={data.gallery_buttons.project.url} rel="noopener noreferrer" target="_blank" >
+                                <i className={`me-1 ${data.gallery_buttons.project.icon}`}></i>
+                                {data.gallery_buttons.project.name}
+                            </a>
+                        </span>
                     </div>
                 </div>
                 <FsLightbox toggler={toggler}

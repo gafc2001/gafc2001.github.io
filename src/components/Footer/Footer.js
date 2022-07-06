@@ -19,8 +19,8 @@ export const Footer = () => {
             <Col md="3" className="center-x">
                 <div className="fit-content">
                     <h5>{lang.footer.explore.title}</h5>
-                    {lang.footer.explore.links.map( link => {
-                        return (<a className="text-light footer-link" href={`#${link.href}`}>{link.name}</a>)
+                    {lang.footer.explore.links.map( (link,index) => {
+                        return (<a key={index} className="text-light footer-link" href={`#${link.href}`}>{link.name}</a>)
                     })}
                 </div>
             </Col>
@@ -48,7 +48,7 @@ export const Footer = () => {
                     <div>
                         {lang.project.projects.map( project => {
                             return (
-                                <a className='text-light footer-link' href={project.links[1].url}>{project.title}</a>
+                                <a className='text-light footer-link' href={project.gallery_buttons.project.url}>{project.title}</a>
                             );
                         })}
                     </div>

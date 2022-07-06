@@ -113,7 +113,6 @@ const english = {
     },
     "project" : {
         "title" : "Personal projects",
-        "note" : "The projects are deployed on heroku free plan, therefore it takes time to load the first time",
         "projects" : [
             //Online Restaurant
             {
@@ -123,7 +122,6 @@ const english = {
                     "For the project React is used and the Restaurant API is consumed"
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -132,11 +130,6 @@ const english = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/RestaurantFront"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://restaurant-line.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "react.svg",
@@ -153,7 +146,18 @@ const english = {
                     'restaurant/picture-8.png',
                     'restaurant/picture-9.png',
                     'restaurant/picture-10.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://restaurant-web-online.netlify.app/"
+                    }
+                },
             },
             //Restaurant Api
             {
@@ -163,7 +167,6 @@ const english = {
                     "This project is using spring as programming language, mysql as database engine and Firebase Storage() as file storage. For the API documentation, Bootstrap was used to speed up the design."
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -172,11 +175,6 @@ const english = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/RestaurantApi"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://restaurantrestapi.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "spring.svg",
@@ -188,7 +186,18 @@ const english = {
                     'api-restaurant/picture-1.png',
                     'api-restaurant/picture-2.png',
                     'api-restaurant/picture-3.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://restaurantapi-production.up.railway.app/docs"
+                    }
+                },
             },
             //Juega Ya
             {
@@ -198,7 +207,6 @@ const english = {
                     "You will be able to indicate how many people are missing for an important match, this way someone who is close to your location will be able to indicate to you through the application that if they want to join the match, and you will be able to see their personal information and the comments and ranking of the player."
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -207,11 +215,6 @@ const english = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/JuegaYa"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://juegaya.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "laravel.svg",
@@ -227,7 +230,18 @@ const english = {
                     'juega-ya/picture-4.png',
                     'juega-ya/picture-5.png',
                     'juega-ya/picture-6.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://juegaya-production.up.railway.app/"
+                    }
+                },
             },
             //CityTours
             {
@@ -237,7 +251,6 @@ const english = {
                     "Additionally has a dashboard where you can create, edit or delete destinations, such as creating trips"
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -246,11 +259,6 @@ const english = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/citytours"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://citytours-web.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "django.png",
@@ -266,7 +274,18 @@ const english = {
                     'citytours/picture-4.png',
                     'citytours/picture-5.png',
                     'citytours/picture-6.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://citytours-production.up.railway.app/"
+                    }
+                },
             },
             //Tornillin
             {
@@ -275,7 +294,6 @@ const english = {
                     "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -284,11 +302,6 @@ const english = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/Website-ferreteria"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://tornillin.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "laravel.svg",
@@ -301,16 +314,26 @@ const english = {
                     'tornillin/picture-1.png',
                     'tornillin/picture-2.png',
                     'tornillin/picture-3.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://website-ferreteria-production.up.railway.app/"
+                    }
+                },
             },
             //Bienes y Raices
             {
-                "title" : "Bines y Raices",
+                "title" : "Bienes y Raices",
                 "paragraphs" : [
                     "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -319,11 +342,6 @@ const english = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/bienes-raices"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://bienes-raices-online.netlify.app/"
-                    }
                 ],
                 "technologies" : [
                     "html.png",
@@ -334,7 +352,18 @@ const english = {
                     'bienes-raices/picture-2.png',
                     'bienes-raices/picture-3.png',
                     'bienes-raices/picture-4.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://bienes-raices-online.netlify.app/"
+                    }
+                },
             },
             //Frontend Store
             {
@@ -343,7 +372,6 @@ const english = {
                     "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -352,11 +380,6 @@ const english = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/store-grid"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://store-online-grid.netlify.app/"
-                    }
                 ],
                 "technologies" : [
                     "html.png",
@@ -366,7 +389,18 @@ const english = {
                     'grid-store/picture-1.png',
                     'grid-store/picture-2.png',
                     'grid-store/picture-3.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://store-online-grid.netlify.app/"
+                    }
+                },
             },
         ]
     },
@@ -536,7 +570,6 @@ const spanish = {
     },
     "project" : {
         "title" : "Mis proyectos",
-        "note" : "Los proyectos estan desplegados en un plan gratis de heroku, por lo tanto demora en cargar la primera vez",
         "projects" : [
             //Online Restaurant
             {
@@ -546,8 +579,6 @@ const spanish = {
                     "Para el proyecto se uso React y se consume la Restaurant API"
                 ],
                 "extras" : {
-                    "button_gallery_text" : "Ver galeria",
-                    "techs_text" : "Tecnologias usadas"
                 },
                 "links" : [
                     {
@@ -555,11 +586,6 @@ const spanish = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/RestaurantFront"
                     },
-                    {
-                        "name" : "Ir a la pagina",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://restaurant-line.herokuapp.com/"
-                    }
                 ],    
                 "technologies" : [
                     "react.svg",
@@ -576,7 +602,18 @@ const spanish = {
                     'restaurant/picture-8.png',
                     'restaurant/picture-9.png',
                     'restaurant/picture-10.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://restaurant-web-online.netlify.app/"
+                    }
+                },
             },
             //Restaurant Api
             {
@@ -586,8 +623,6 @@ const spanish = {
                     "Este proyecto esta utilizando spring como lenguaje de programacion, mysql como motor de base de datos y Firebase Storage(S3) como almacenamiento de imagenes. Para la documentacion de la API se utilizo Bootstrap para agilizar el diseño."
                 ],
                 "extras" : {
-                    "button_gallery_text" : "Ver galeria",
-                    "techs_text" : "Tecnologias usadas"
                 },
                 "links" : [
                     {
@@ -595,11 +630,6 @@ const spanish = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/RestaurantApi"
                     },
-                    {
-                        "name" : "Ir a la pagina",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://restaurantrestapi.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "spring.svg",
@@ -611,7 +641,18 @@ const spanish = {
                     'api-restaurant/picture-1.png',
                     'api-restaurant/picture-2.png',
                     'api-restaurant/picture-3.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://restaurantapi-production.up.railway.app/docs"
+                    }
+                },
             },
             //Juega Ya
             {
@@ -621,8 +662,6 @@ const spanish = {
                     "Podrás indicar cuantas personas te faltan para algún partido importante, de esta manera alguien que este cercano hacia tu distrito podrá indicarte mediante el aplicativo que si quiere ingresar al partido, podrás ver la información de sus datos y ver los comentarios y ranking del jugador."
                 ],
                 "extras" : {
-                    "button_gallery_text" : "Ver galeria",
-                    "techs_text" : "Tecnologias usadas"
                 },
                 "links" : [
                     {
@@ -630,11 +669,6 @@ const spanish = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/JuegaYa"
                     },
-                    {
-                        "name" : "Ir a la pagina",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://juegaya.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "laravel.svg",
@@ -650,7 +684,18 @@ const spanish = {
                     'juega-ya/picture-4.png',
                     'juega-ya/picture-5.png',
                     'juega-ya/picture-6.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://juegaya-production.up.railway.app/"
+                    }
+                },
             },
             //CityTours
             {
@@ -660,8 +705,6 @@ const spanish = {
                     "Ademas tiene un dashboard donde podras crear editar o eliminar los destinos, como crear viajes."
                 ],
                 "extras" : {
-                    "button_gallery_text" : "Ver galeria",
-                    "techs_text" : "Tecnologias usadas"
                 },
                 "links" : [
                     {
@@ -669,11 +712,6 @@ const spanish = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/citytours"
                     },
-                    {
-                        "name" : "Ir a la pagina",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://citytours-web.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "django.png",
@@ -689,7 +727,18 @@ const spanish = {
                     'citytours/picture-4.png',
                     'citytours/picture-5.png',
                     'citytours/picture-6.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://citytours-production.up.railway.app/"
+                    }
+                },
             },
             //Tornillin
             {
@@ -698,8 +747,6 @@ const spanish = {
                     "Tornillin es una aplicacion web para una ferreteria que te permite comprar productos, agregandolo al carrito y luego procediendo con el pago y luego poder ver el resument de tu compra.",
                 ],
                 "extras" : {
-                    "button_gallery_text" : "Ver galeria",
-                    "techs_text" : "Tecnologias usadas"
                 },
                 "links" : [
                     {
@@ -707,11 +754,6 @@ const spanish = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/Website-ferreteria"
                     },
-                    {
-                        "name" : "Ir a la pagina",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://tornillin.herokuapp.com/"
-                    }
                 ],
                 "technologies" : [
                     "laravel.svg",
@@ -724,17 +766,27 @@ const spanish = {
                     'tornillin/picture-1.png',
                     'tornillin/picture-2.png',
                     'tornillin/picture-3.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://website-ferreteria-production.up.railway.app/"
+                    }
+                },
                 
             },
             //Bienes y Raices
             {
-                "title" : "Bines y Raices",
+                "title" : "Bienes y Raices",
                 "paragraphs" : [
                     "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -743,11 +795,6 @@ const spanish = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/bienes-raices"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://bienes-raices-online.netlify.app/"
-                    }
                 ],
                 "technologies" : [
                     "html.png",
@@ -758,7 +805,18 @@ const spanish = {
                     'bienes-raices/picture-2.png',
                     'bienes-raices/picture-3.png',
                     'bienes-raices/picture-4.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://bienes-raices-online.netlify.app/"
+                    }
+                },
             },
             //Frontend Store
             {
@@ -767,7 +825,6 @@ const spanish = {
                     "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
                 ],
                 "extras" : {
-                    "button_gallery_text" : "See Gallery",
                     "techs_text" : "Used Technologies"
                 },
                 "links" : [
@@ -776,11 +833,6 @@ const spanish = {
                         "icon" : "fab fa-github",
                         "url" : "https://github.com/gafc2001/store-grid"
                     },
-                    {
-                        "name" : "Go to the website",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://store-online-grid.netlify.app/"
-                    }
                 ],
                 "technologies" : [
                     "html.png",
@@ -790,7 +842,18 @@ const spanish = {
                     'grid-store/picture-1.png',
                     'grid-store/picture-2.png',
                     'grid-store/picture-3.png',
-                ]
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://store-online-grid.netlify.app/"
+                    }
+                },
             },
         ]        
     },    
