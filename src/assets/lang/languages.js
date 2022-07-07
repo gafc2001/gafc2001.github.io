@@ -158,6 +158,84 @@ const english = {
                         "url" : "https://restaurant-web-online.netlify.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Sandbox accounts",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credential",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Email or user",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Password",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observation",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Client",
+                                    "account" : "client",
+                                    "password" : "12345678",
+                                    "observation" : "Account to log in or otherwise register new user"
+                                },
+                                {
+                                    "credential" : "Administrator",
+                                    "account" : "superuser",
+                                    "password" : "12345678",
+                                    "observation" : "Account to authenticate as Administrator"
+                                },
+                                {
+                                    "credential" : "Paypal",
+                                    "account" : "test-client2022@personal.example.com",
+                                    "password" : "12345678",
+                                    "observation" : "Account for purchasing products with Paypal"
+                                }
+                            ]
+                        },
+                        {
+                            "headers" : [
+                                {
+                                    "name" :"Card Type",
+                                    "width" : "14",
+                                },
+                                {
+                                    "name" :"Card Number",
+                                    "width" : "29",
+                                },
+                                {
+                                    "name" :"Date",
+                                    "width" : "10",
+                                },
+                                {
+                                    "name" :"CVV",
+                                    "width" : "15",
+                                },
+                                {
+                                    "name" :"Obeservation",
+                                    "width" : "30",
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "card_type" : "Visa",
+                                    "card_number" : "4242 4242 4242 4242",
+                                    "date" : "Any date",
+                                    "cvv" : "Any 3 digit number",
+                                    "observation" : "visa card to purchase products"
+                                },
+                            ]
+                        }
+                    ]
+                }
             },
             //Restaurant Api
             {
@@ -242,6 +320,45 @@ const english = {
                         "url" : "https://juegaya-production.up.railway.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Sandbox accounts",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credential",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Email or user",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Password",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observation",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Client",
+                                    "account" : "tony@gmail.com",
+                                    "password" : "12345678",
+                                    "observation" : "Account to log in or otherwise register new user"
+                                },
+                                {
+                                    "credential" : "Administrator",
+                                    "account" : "gustavo@gmail.com",
+                                    "password" : "12345678",
+                                    "observation" : "Account to log in or otherwise register new user"
+                                },
+                            ]
+                        },
+                    ]
+                }
             },
             //CityTours
             {
@@ -286,6 +403,39 @@ const english = {
                         "url" : "https://citytours-production.up.railway.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Sandbox accounts",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credential",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Email or user",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Password",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observation",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Administrator",
+                                    "account" : "admin@gmail.com",
+                                    "password" : "root",
+                                    "observation" : "Account to authenticate as Administrator"
+                                },
+                            ]
+                        },
+                    ]
+                }
             },
             //Tornillin
             {
@@ -326,6 +476,39 @@ const english = {
                         "url" : "https://website-ferreteria-production.up.railway.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Sandbox accounts",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credential",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Email or user",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Password",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observation",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Client",
+                                    "account" : "client",
+                                    "password" : "12345678",
+                                    "observation" : "Account to log in or otherwise register new user"
+                                },
+                            ]
+                        },
+                    ]
+                }
             },
             //Bienes y Raices
             {
@@ -614,6 +797,84 @@ const spanish = {
                         "url" : "https://restaurant-web-online.netlify.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Cuentas de prueba",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credencial",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Correo o usuario",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Contraseña",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observacion",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Cliente",
+                                    "account" : "client",
+                                    "password" : "12345678",
+                                    "observation" : "Cuenta para iniciar sesión o de lo contrario registrar un nuevo usuario"
+                                },
+                                {
+                                    "credential" : "Administrador",
+                                    "account" : "superuser",
+                                    "password" : "12345678",
+                                    "observation" : "Cuenta para ingresar como administrador"
+                                },
+                                {
+                                    "credential" : "Paypal",
+                                    "account" : "test-client2022@personal.example.com",
+                                    "password" : "12345678",
+                                    "observation" : "Cuenta para comprar productos con Paypal"
+                                }
+                            ]
+                        },
+                        {
+                            "headers" : [
+                                {
+                                    "name" :"Card Type",
+                                    "width" : "14",
+                                },
+                                {
+                                    "name" :"Card Number",
+                                    "width" : "29",
+                                },
+                                {
+                                    "name" :"Date",
+                                    "width" : "10",
+                                },
+                                {
+                                    "name" :"CVV",
+                                    "width" : "15",
+                                },
+                                {
+                                    "name" :"Obeservation",
+                                    "width" : "30",
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "card_type" : "Visa",
+                                    "card_number" : "4242 4242 4242 4242",
+                                    "date" : "Cualquier fecha",
+                                    "cvv" : "Cualquiere numero de 3 digitos",
+                                    "observation" : "Tarjeta visa para comprar productos"
+                                },
+                            ]
+                        }
+                    ]
+                }
             },
             //Restaurant Api
             {
@@ -696,6 +957,45 @@ const spanish = {
                         "url" : "https://juegaya-production.up.railway.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Cuentas de prueba",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credencial",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Correo o usuario",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Contraseña",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observacion",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Usuario",
+                                    "account" : "tony@gmail.com",
+                                    "password" : "12345678",
+                                    "observation" : "Cuenta para iniciar sesión o de lo contrario registrar un nuevo usuario"
+                                },
+                                {
+                                    "credential" : "Usuario",
+                                    "account" : "gustavo@gmail.com",
+                                    "password" : "12345678",
+                                    "observation" : "Cuenta para iniciar sesión o de lo contrario registrar un nuevo usuario"
+                                },
+                            ]
+                        },
+                    ]
+                }
             },
             //CityTours
             {
@@ -739,6 +1039,39 @@ const spanish = {
                         "url" : "https://citytours-production.up.railway.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Cuentas de prueba",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credencial",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Correo o usuario",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Contraseña",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observacion",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Administrador",
+                                    "account" : "admin@gmail.com",
+                                    "password" : "root",
+                                    "observation" : "Cuenta para ingresar como administrador"
+                                },
+                            ]
+                        },
+                    ]
+                }
             },
             //Tornillin
             {
@@ -778,6 +1111,39 @@ const spanish = {
                         "url" : "https://website-ferreteria-production.up.railway.app/"
                     }
                 },
+                "credentials" : {
+                    "description" : "Cuentas de prueba",
+                    "tables" : [
+                        {
+                            "headers" : [
+                                {
+                                    "name" : "Credencial",
+                                    "width" : "20"
+                                },
+                                {
+                                    "name" : "Correo o usuario",
+                                    "width" : "30"
+                                },
+                                {
+                                    "name" : "Contraseña",
+                                    "width" : "10"
+                                },
+                                {
+                                    "name" : "Observacion",
+                                    "width" : "40"
+                                },
+                            ],
+                            "body" : [
+                                {
+                                    "credential" : "Cliente",
+                                    "account" : "client",
+                                    "password" : "12345678",
+                                    "observation" : "Cuenta para iniciar sesión o de lo contrario registrar un nuevo usuario"
+                                },
+                            ]
+                        },
+                    ]
+                }
                 
             },
             //Bienes y Raices

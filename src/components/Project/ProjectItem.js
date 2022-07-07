@@ -1,12 +1,12 @@
 import React,{ useState} from 'react'
 import FsLightbox from 'fslightbox-react';
 
-import { Row, Col} from "react-bootstrap"
+import { Row, Col,Table} from "react-bootstrap"
 export const ProjectItem = ({ data }) => {
     const [toggler,setToggler] = useState(false)
     return (
         <Row className="border-2 border-bottom border-primary mb-5 pb-5">
-            <Col lg="7" className="mb-3">
+            <Col lg="6" className="mb-3">
                 <h3>{data.title}</h3>
                 {data.paragraphs.map((item,it) => <p className="paragraph" key={it}>{item}</p>)}
                 {data.links.map((link,it) => {
@@ -34,7 +34,7 @@ export const ProjectItem = ({ data }) => {
                     )}
                 </div>
             </Col>
-            <Col lg="5">
+            <Col lg="6">
                 <div className="gallery my-auto">
                     <img src={require(`./../../assets/images/projects/${data.gallery[0]}`)}
                         className="img-fluid rounded shadow-lg" alt="webpage"/>
@@ -50,6 +50,37 @@ export const ProjectItem = ({ data }) => {
                             </a>
                         </span>
                     </div>
+                </div>
+                {data.credentials && (
+                    <>
+                        <div className="h3 mt-2 mb-0">
+                            {data.credentials.description}
+                        </div>
+                        <div className='table-responsive'>
+                            {data.credentials.tables.map( (table) => (
+                                <Table className="table-sm table-responsive">
+                                    <thead className="table-dark">
+                                        <tr>
+                                        {table.headers.map((header,index) => (
+                                            <th key={index} style={{width: header.width+'%'}}>{header.name}</th>
+                                        ))}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {table.body.map((row,index) => (
+                                            <tr key={index}>
+                                            {Object.keys(row).map((key,index) => (    
+                                                <td key={index}>{row[key]}</td>
+                                            ))}
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </Table>
+                            ))}
+                        </div>
+                    </>
+                )}
+                <div>
                 </div>
                 <FsLightbox toggler={toggler}
                     sources={data.gallery.map(photo => 
