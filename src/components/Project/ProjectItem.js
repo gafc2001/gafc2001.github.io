@@ -8,22 +8,22 @@ export const ProjectItem = ({ data }) => {
         <Row className="border-2 border-bottom border-primary mb-5 pb-5">
             <Col lg="6" className="mb-3">
                 <h3>{data.title}</h3>
-                {data.paragraphs.map((item,it) => <p className="paragraph" key={it}>{item}</p>)}
-                {data.links.map((link,it) => {
-                    return (
-                        <div key={it} className="project-links d-flex align-items-md-center flex-column flex-sm-row">
-                            <p className="m-0 me-2 project-link-desc">
-                                {link.name}
-                                <i className="ms-2 fas fa-arrow-alt-circle-right"></i>
-                            </p>
-                            <a rel="noopener noreferrer" target="_blank" className="project-link bg-primary my-2"
-                                href={link.url}>
-                                <i className={`me-1 ${link.icon}`}></i>
-                                <span>{link.url}</span>
-                            </a>
-                        </div>
-                    )
-                })}
+                {data.paragraphs.map((item,it) => (
+                    <p className="paragraph" key={it}>{item}</p>
+                ))}
+                {data.links.map((link,it) => (
+                    <div key={it} className="project-links d-flex align-items-md-center flex-column flex-sm-row">
+                        <p className="m-0 me-2 project-link-desc">
+                            {link.name}
+                            <i className="ms-2 fas fa-arrow-alt-circle-right"></i>
+                        </p>
+                        <a rel="noopener noreferrer" target="_blank" className="project-link bg-primary my-2"
+                            href={link.url}>
+                            <i className={`me-1 ${link.icon}`}></i>
+                            <span>{link.url}</span>
+                        </a>
+                    </div>
+                ))}
                 <h4 className="fs-3">{data.extras.techs_text}</h4>
                 <div className="d-flex flex-wrap">
                     {data.technologies.map((tech,it) => 
@@ -57,8 +57,8 @@ export const ProjectItem = ({ data }) => {
                             {data.credentials.description}
                         </div>
                         <div className='table-responsive'>
-                            {data.credentials.tables.map( (table) => (
-                                <Table className="table-sm table-responsive">
+                            {data.credentials.tables.map( (table,index) => (
+                                <Table key={index} className="table-sm table-responsive">
                                     <thead className="table-dark">
                                         <tr>
                                         {table.headers.map((header,index) => (

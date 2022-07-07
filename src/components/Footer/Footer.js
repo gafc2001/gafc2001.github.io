@@ -13,7 +13,9 @@ export const Footer = () => {
                     <span className="h3 m-0 ms-1">GAFC2001</span>
                 </h5>
                 <div>
-                    {lang.footer.paragraphs.map( e => (<p>{e}</p>))}
+                    {lang.footer.paragraphs.map( (paragraph,index) => (
+                        <p key={index}>{paragraph}</p>
+                    ))}
                 </div>
             </Col>
             <Col md="3" className="center-x">
@@ -46,9 +48,9 @@ export const Footer = () => {
                 <div className='fit-content'>
                     <h5>{lang.footer.projects.title}</h5>
                     <div>
-                        {lang.project.projects.map( project => {
+                        {lang.project.projects.map( (project,index) => {
                             return (
-                                <a className='text-light footer-link' href={project.gallery_buttons.project.url}>{project.title}</a>
+                                <a key={index}className='text-light footer-link' href={project.gallery_buttons.project.url}>{project.title}</a>
                             );
                         })}
                     </div>
