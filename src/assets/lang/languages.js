@@ -31,8 +31,9 @@ const english = {
         "banner" :{
             "title" : "Hi! I'm Gustavo",
             "paragraphs" : [
-                "I am a software developer, currently I studying Software Engineering.",
-                "I love to create applications where I can solve problems. That's why I am looking for proyects where I can use my knowledge and allows me to grow professionally"
+                "Software Developer, graduated from Senati Institute.",
+                "Able to create functional and maintainable applications from start to finish. Willing to face new challenges and learn new technologies that allow me to grow professionally.",
+                "I describe myselft as a creative person, team player, self-taught, analytical and problem-solving."
             ],
         },
     },
@@ -119,7 +120,7 @@ const english = {
                 "title" : "Online Restaurant",
                 "paragraphs" : [
                     "The purpose of the project is to develop a food delivery web system for the sales and administration areas, which can be accessed through the web with the objective to improve the user experience and the restaurant sales.",
-                    "For the project React is used and the Restaurant API is consumed"
+                    "For the project React is used and the Restaurant API is consumed."
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -365,7 +366,7 @@ const english = {
                 "title" : "CityTours",
                 "paragraphs" : [
                     "CityTours is a web application where you can see and buy tickets for different destinations in Peru.",
-                    "Additionally has a dashboard where you can create, edit or delete destinations, such as creating trips"
+                    "Additionally has a dashboard where you can create, edit or delete destinations, such as creating trips."
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -441,7 +442,7 @@ const english = {
             {
                 "title" : "Tornillin",
                 "paragraphs" : [
-                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase",
+                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase.",
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -514,7 +515,7 @@ const english = {
             {
                 "title" : "Bienes y Raices",
                 "paragraphs" : [
-                    "It is a website for sale of luxury homes and apartments. You will be able to see the incredible homes that we have. The website is made with HTML and CSS",
+                    "It is a website for sale of luxury homes and apartments. You will be able to see the incredible homes that we have. The website is made with HTML and CSS.",
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -610,8 +611,9 @@ const english = {
     },
     "footer" : {
         "paragraphs" : [
-            "I am a software developer, currently I studying Software Engineering.",
-            "I love to create applications where I can solve problems. That's why I am looking for proyects where I can use my knowledge and allows me to grow professionally"
+            "Software Developer, graduated from Senati Institute.",
+            "Able to create functional and maintainable applications from start to finish. Willing to face new challenges and learn new technologies that allow me to grow professionally.",
+            "I describe myselft as a creative person, team player, self-taught, analytical and problem-solving."
         ],
         "explore" : {
             "title" : "Explore",
@@ -671,8 +673,9 @@ const spanish = {
         "banner" :{
             "title" : "Hola! Soy Gustavo",
             "paragraphs" : [
-                "Soy un desarrollador de software, actualmente estoy estudiando Ingeniería de Software",
-                "Me encanta crear aplicaciones en la que pueda solucionar un problema. Para ello busco proyectos en la que pueda aplicar mis conocimientos y me permita crecer profesionalmente"
+                "Desarrollador de Software, egresado del Instituto SENATI.",
+                "Capaz de crear aplicaciones funcionales y mantenibles de inicio a fin. Dispuesto a afrontar nuevos retos y aprender nuevas tecnologías que me permitan crecer profesionalmente.",
+                "Me caracterizo por ser una persona creativa, trabajo en equipo, autodidacta y resolver problemas."               
             ],
         },
     },
@@ -759,7 +762,7 @@ const spanish = {
                 "title" : "Restaurant en linea",
                 "paragraphs" : [
                     "El proyecto tiene como finalidad desarrollar un sistema web de pedidos de comida para las áreas de venta y administración, el cual podrá ser accedido a través de la Web con el objetivo de mejorar la gestión del restaurante.",
-                    "Para el proyecto se uso React y se consume la Restaurant API"
+                    "Para el proyecto se uso React y se consume la Restaurant API."
                 ],
                 "extras" : {
                 },
@@ -1150,7 +1153,7 @@ const spanish = {
             {
                 "title" : "Bienes y Raices",
                 "paragraphs" : [
-                    "Es una pagina web de venta de casas y departamentos de lujo. Podras ver las increibles propiedades que tenemos. La pagina esta hecho con HTML y CSS",
+                    "Es una pagina web de venta de casas y departamentos de lujo. Podras ver las increibles propiedades que tenemos. La pagina esta hecho con HTML y CSS.",
                 ],
                 "extras" : {
                     "techs_text" : "Used Technologies"
@@ -1246,8 +1249,9 @@ const spanish = {
     },
     "footer" : {
         "paragraphs" : [
-            "Soy un desarrollador de software, actualmente estoy estudiando Ingeniería de Software",
-            "Me encanta crear aplicaciones en la que pueda solucionar un problema. Para ello busco proyectos en la que pueda aplicar mis conocimientos y me permita crecer profesionalmente"
+            "Desarrollador de Software, egresado del Instituto SENATI.",
+            "Capaz de crear aplicaciones funcionales y mantenibles de inicio a fin. Dispuesto a afrontar nuevos retos y aprender nuevas tecnologías que me permitan crecer profesionalmente.",
+            "Me caracterizo por ser una persona creativa, trabajo en equipo, autodidacta y resolver problemas"
         ],
         "explore" : {
             "title" : "Explorar",
