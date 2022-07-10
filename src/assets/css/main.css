@@ -20,6 +20,9 @@ img.img-profile {
     transform: rotateZ(360deg);
   }
 }
+.w-screen{
+  min-height: 100vh;
+}
 
 /*=========Text typing==========*/
 .text-typing {
