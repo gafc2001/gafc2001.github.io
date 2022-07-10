@@ -6,7 +6,7 @@ import { Project } from "../components/Project/Project"
 import { Footer } from '../components/Footer/Footer';
 import { ContactForm } from '../components/Forms/ContactForm';
 import { increaseVisit } from '../services/Visit';
-
+import LanguageState from './../context/Language/LanguageState';
 export const Home = () => {
 
   useEffect(() => {
@@ -18,12 +18,12 @@ export const Home = () => {
   },[]);
   
   return (
-    <>
+    <LanguageState>
         <Header/>
         <Skill/>
         <Project/>
         <ContactForm/>
         <Footer/>
-    </>
+    </LanguageState>
   )
 }
