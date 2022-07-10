@@ -9,18 +9,18 @@ export const Login = () => {
             "username" : "",
             "password" : "",
         }
-    })
+    },[])
 
     const [validated,setValidated] = useState(false);
     const [data, setData]  = useState(initialState);
 
     const handleInputChange = (e) => {
+        setValidated(true);
         const value = e.target.value;
         setData({
             ...data,
             [e.target.name] : value,
         })    
-        console.log(data)
     }
     const handleSubmit = (e) => {
         e.preventDefault();
