@@ -29,7 +29,7 @@ export const Login = () => {
     
 
     return (
-    <main className="w-screen bg-gradient-login center">
+    <main className="h-screen bg-gradient-login center">
         <div className="login-container">
             <Form className="bg-light p-5 rounded" 
                  validated={validated}

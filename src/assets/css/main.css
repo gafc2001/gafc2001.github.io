@@ -21,6 +21,9 @@ img.img-profile {
   }
 }
 .w-screen{
+  min-height: 100vw;
+}
+.h-screen{
   min-height: 100vh;
 }
 
