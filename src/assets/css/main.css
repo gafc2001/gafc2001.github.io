@@ -217,7 +217,7 @@ img.img-profile {
   text-align: left;
 }
 
-.border-bottom:last-of-type {
+.project.border-bottom:last-of-type {
   border-bottom: none !important;
 }
 

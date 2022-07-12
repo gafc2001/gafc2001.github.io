@@ -18,6 +18,9 @@
     width: 250px;
     background-color: var(--primary-color);
 }
+.title-sidebar{
+    height: 62px;
+}
 .main-navbar ul{
     list-style: none;
 }
@@ -31,4 +34,11 @@
 }
 .menu-item.active{
     background-color: var(--bs-primary);
+}
+.main-navbar{
+    left: 250px!important;
+    height: 62px;
+}
+.border-semi-light{
+    border-color: rgb(92, 92, 92);
 }

@@ -5,7 +5,7 @@ import { Row, Col,Table} from "react-bootstrap"
 export const ProjectItem = ({ data }) => {
     const [toggler,setToggler] = useState(false)
     return (
-        <Row className="border-2 border-bottom border-primary mb-5 pb-5">
+        <Row className="project border-2 border-bottom border-primary mb-5 pb-5">
             <Col lg="6" className="mb-3">
                 <h3>{data.title}</h3>
                 {data.paragraphs.map((item,it) => (
