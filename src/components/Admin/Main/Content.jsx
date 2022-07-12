@@ -4,9 +4,10 @@ import { Summary } from './Summary'
 
 export const Content = () => {
   return (
-    <div className="flex-fill mt-4">
+    <div className="flex-fill pt-4 mt-5">
         <MainNavbar/>
-        <div className="p-5">
+        <div className="px-4">
+            <h2>Dashboard</h2>
             <Summary/>
         </div>
     </div>
