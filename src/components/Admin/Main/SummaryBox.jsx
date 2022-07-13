@@ -9,7 +9,7 @@ export const SummaryBox = ({bgColor,value,text,icon}) => {
           <span className='summary-value'>{value}</span>  
         </Col>
         <Col className="center">
-          <i class={`summary-icon ${icon}`}></i>
+          <i className={`summary-icon ${icon}`}></i>
         </Col>
       </Row>
     </Col>

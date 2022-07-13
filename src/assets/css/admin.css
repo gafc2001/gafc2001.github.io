@@ -57,3 +57,7 @@
 .summary-value{
     font-size: 50px;
 }
+
+.chart-container{
+    max-height: 300px;
+}

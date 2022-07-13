@@ -1,4 +1,5 @@
 import React from 'react'
+import { LinearChart } from './LinearChart'
 import { MainNavbar } from './MainNavbar'
 import { Summary } from './Summary'
 
@@ -9,7 +10,11 @@ export const Content = () => {
         <div className="px-4">
             <h2>Dashboard</h2>
             <Summary/>
+            <div className="chart-container">
+              <LinearChart/>
+            </div>
         </div>
+
     </div>
   )
 }
