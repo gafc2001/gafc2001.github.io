@@ -1,7 +1,7 @@
 import Alert from "./../components/Utils/Alert";
 
 const api = process.env.REACT_APP_API_URL;
-const login = async (request) => {
+const signinService = async(request) => {
     const endpoint = `${api}/api/auth/login`;
     return await fetch(endpoint,{
             'method' : 'POST',
@@ -12,19 +12,28 @@ const login = async (request) => {
         })
         .then(json => {
             const data = json.data;
-            localStorage.setItem('auth_token',data.credentials.token);
-            // Alert("success","Good",data.message);
-            return true;
+            return data;
         })
         .catch(err => {
             Alert("error","Error",err.message)
             return false;
         });
 }
-const logout = async () => {
+const signoutService = async () => {
 
 }
+const verify = async (token) => {
+    const endpoint = `${api}/api/auth/verify`;
+    const headers = new Headers();
+    headers.append('Authorization', 'Bearer ' + token);
+    const request = await fetch(endpoint,{
+        "headers": headers
+    }).then(resp => resp.ok)
+    .catch(err => false) 
+    return request;
+}
 export {
-    login,
-    logout
+    signinService,
+    signoutService,
+    verify
 }

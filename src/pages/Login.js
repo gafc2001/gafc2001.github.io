@@ -1,10 +1,11 @@
 import React,{useState,useMemo} from "react";
 import "./../assets/css/admin.css";
 import { Form, InputGroup, Button } from "react-bootstrap";
-import {login,logout} from "./../services/Auth";
-import { useNavigate  } from 'react-router-dom'
+// import {login,logout} from "./../services/Auth";
+import { useNavigate  } from 'react-router-dom';
+import useAuth from "./../hooks/useAuth";
 export const Login = () => {
-
+    const auth = useAuth();
     const navigate = useNavigate();
     const initialState = useMemo(() => {
         return {
@@ -15,7 +16,7 @@ export const Login = () => {
 
     const [validated,setValidated] = useState(false);
     const [data, setData]  = useState(initialState);
-    const [loading, setLoading] = useState(false);
+
     const handleInputChange = (e) => {
         setValidated(true);
         const value = e.target.value;
@@ -27,12 +28,11 @@ export const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const send = async () => {
-            setLoading(true);
-            const resp = await login(data);
-            if(resp){
-                navigate("/superdashboard",{replace:true})
+            await auth.signin(data);
+            if(auth.isAuthenticated){
+                console.log("hola")
+                navigate("/superdashboard",{replace:true}).catch(err => console.log(err))
             }
-            setLoading(false);
         }
         send();
     }
@@ -70,8 +70,8 @@ export const Login = () => {
                     onChange={(e) => handleInputChange(e)}
                     />
                 </InputGroup>
-                <Button type="submit" disabled={loading}>
-                    {loading && 
+                <Button type="submit" disabled={auth.isLoading}>
+                    {auth.isLoading && 
                         <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                     }
                     <span className="ms-2">Submit</span>
