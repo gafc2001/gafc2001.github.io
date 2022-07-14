@@ -1,7 +1,4 @@
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-
-const MySwal = withReactContent(Swal)
+import Alert from "./../../components/Utils/Alert";
 
 const sendMessage = async(data) => {
     const api = `${process.env.REACT_APP_API_URL}/api/message`;
@@ -17,18 +14,10 @@ const sendMessage = async(data) => {
         if(!resp.ok) throw new Error("Error")
         return resp.json();
     }).then(json => {
-        MySwal.fire({
-            icon: 'success',
-            title: 'Yeahh!',
-            text: 'Message sent',
-        })
+        Alert('success','Yeahh!','Message sent')
     })
     .catch(err => {
-        MySwal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
-        })
+        Alert('error','Oops...','Something went wrong!');
     })
 }
 

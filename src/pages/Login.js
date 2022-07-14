@@ -1,19 +1,20 @@
 import React,{useState,useMemo} from "react";
 import "./../assets/css/admin.css";
 import { Form, InputGroup, Button } from "react-bootstrap";
+import {login,logout} from "./../services/Auth";
 export const Login = () => {
 
     
     const initialState = useMemo(() => {
         return {
-            "username" : "",
+            "email" : "",
             "password" : "",
         }
     },[])
 
     const [validated,setValidated] = useState(false);
     const [data, setData]  = useState(initialState);
-
+    const [loading, setLoading] = useState(false);
     const handleInputChange = (e) => {
         setValidated(true);
         const value = e.target.value;
@@ -24,7 +25,12 @@ export const Login = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(data);
+        const send = async () => {
+            setLoading(true);
+            await login(data);
+            setLoading(false);
+        }
+        send();
     }
     
 
@@ -39,9 +45,10 @@ export const Login = () => {
                     <i className="fas fa-user-secret"></i>
                     </InputGroup.Text>
                     <Form.Control
-                    name="username"
-                    placeholder="Username"
-                    aria-label="Username"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    aria-label="Email"
                     required
                     onChange={(e) => handleInputChange(e)}
                     />
@@ -59,7 +66,12 @@ export const Login = () => {
                     onChange={(e) => handleInputChange(e)}
                     />
                 </InputGroup>
-                <Button type="submit">Submit</Button>
+                <Button type="submit" disabled={loading}>
+                    {loading && 
+                        <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    }
+                    <span className="ms-2">Submit</span>
+                </Button>
             </Form>
         </div>
     </main>

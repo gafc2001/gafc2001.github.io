@@ -1,6 +1,6 @@
 import React, { useState,useRef} from 'react';
 import { Col, Row, Form, Button, Spinner } from 'react-bootstrap';
-import { Section } from './../Section';
+import { Section } from './../Utils/Section';
 
 import programming from './../../assets/images/i3.webp';
 import { sendMessage } from '../../services/Message';

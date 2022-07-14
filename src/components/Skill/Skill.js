@@ -1,7 +1,7 @@
 import React from 'react'
 import useLanguage from './../../hooks/useLanguage';
 import { TechSkill } from './TechSkill'
-import { Section } from "./../Section"
+import { Section } from './../Utils/Section';
 export const Skill = () => {
   const {lang} = useLanguage();
   const data = lang.skills;

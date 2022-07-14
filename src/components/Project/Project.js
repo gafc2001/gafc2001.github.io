@@ -1,6 +1,6 @@
 import React from 'react'
 import useLanguage from './../../hooks/useLanguage';
-import { Section } from './../Section'
+import { Section } from './../Utils/Section';
 import { ProjectItem } from './ProjectItem'
 export const Project = () => {
   const {lang} = useLanguage();
