@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {signinService} from "./../services/Auth";
+import {signinService, verifyService} from "./../services/Auth";
 const useProvideAuth = () => {
     const [user,setUser] = useState({});
     const [error, setError] = useState("");
@@ -16,14 +16,23 @@ const useProvideAuth = () => {
                 "email" : resp.email,
                 "name" : resp.name,
             })
-            setIsAuthenticated(true);
             localStorage.setItem('auth_token',resp.credentials.token);
         })
-        setIsLoading(false);
-        
+        setIsLoading(false);   
     }
     const signout = () => {
   
+    }
+
+    const verifyAuthentication = async () => {
+        const token = localStorage.getItem('auth_token');
+        if(!token){
+            setIsAuthenticated(false);
+        }
+        setIsLoading(true);
+        const response = await verifyService(token);
+        setIsAuthenticated(response);
+        setIsLoading(false);
     }
     return {
         user,
@@ -32,6 +41,7 @@ const useProvideAuth = () => {
         signout,
         isLoading,
         isAuthenticated,
+        verifyAuthentication,
     }
 }
 

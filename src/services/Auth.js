@@ -22,7 +22,7 @@ const signinService = async(request) => {
 const signoutService = async () => {
 
 }
-const verify = async (token) => {
+const verifyService = async (token) => {
     const endpoint = `${api}/api/auth/verify`;
     const headers = new Headers();
     headers.append('Authorization', 'Bearer ' + token);
@@ -35,5 +35,5 @@ const verify = async (token) => {
 export {
     signinService,
     signoutService,
-    verify
+    verifyService,
 }
