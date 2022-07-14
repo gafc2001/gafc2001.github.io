@@ -50,7 +50,7 @@ export const LinearChart = () => {
     return (
         <Line options={options}
             data={data} 
-            style={{"box-sizing": "border-box",
+            style={{"boxSizing": "border-box",
                     "display": "block",
                     "height": "100px",
                     "width": "100%"}}/>

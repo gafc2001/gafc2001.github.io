@@ -2,9 +2,10 @@ import React,{useState,useMemo} from "react";
 import "./../assets/css/admin.css";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import {login,logout} from "./../services/Auth";
+import { useNavigate  } from 'react-router-dom'
 export const Login = () => {
 
-    
+    const navigate = useNavigate();
     const initialState = useMemo(() => {
         return {
             "email" : "",
@@ -27,7 +28,10 @@ export const Login = () => {
         e.preventDefault();
         const send = async () => {
             setLoading(true);
-            await login(data);
+            const resp = await login(data);
+            if(resp){
+                navigate("/superdashboard",{replace:true})
+            }
             setLoading(false);
         }
         send();
