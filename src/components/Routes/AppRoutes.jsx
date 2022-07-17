@@ -23,8 +23,8 @@ const AppRoutes = () => {
     },[isAuthenticated]);
     return (
         <Routes>
-            <Route exact path="/" element={<Home/>}/>
-            <Route exact path="/superlogin" 
+            <Route name="home"exact path="/" element={<Home/>}/>
+            <Route name="" exact path="/superlogin" 
                 element={
                 <Unauthenticated>
                     <Login/>

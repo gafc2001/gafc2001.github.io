@@ -17,6 +17,7 @@ const useProvideAuth = () => {
                 "name" : resp.name,
             })
             localStorage.setItem('auth_token',resp.credentials.token);
+            setIsAuthenticated(true);
         })
         setIsLoading(false);   
     }

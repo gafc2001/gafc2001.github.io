@@ -16,7 +16,6 @@ export const Content = () => {
     const request = async () => {
       const token = localStorage.getItem("auth_token");
       const response = await dashboardService(token);
-      console.log(response);
       setSummary(response.summary);
       setVisitors(response.visitors);
       setVisitorsPerCountry(response.visitors_per_country);
