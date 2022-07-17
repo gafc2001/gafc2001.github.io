@@ -7,6 +7,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 export const PieChart =({visitors}) => {
+    console.log(visitors);
     const options = {
       responsive: true,
       maintainAspectRatio: false,
@@ -21,11 +22,11 @@ export const PieChart =({visitors}) => {
       },
     };
     const data = {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: visitors.countries,
         datasets: [
           {
             label: '# of Votes',
-            data: [12, 19, 3],
+            data: visitors.total,
             backgroundColor: [
               'rgba(255, 99, 132)',
               'rgba(54, 162, 235)',

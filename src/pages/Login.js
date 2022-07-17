@@ -29,8 +29,6 @@ export const Login = () => {
         e.preventDefault();
         const send = async () => {
             await auth.signin(data);
-            console.log(auth.isAuthenticated);
-            
             if(auth.isAuthenticated){
                 console.log("hola")
                 navigate("/#/superdashboard",{replace:true})
