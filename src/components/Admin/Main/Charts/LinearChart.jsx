@@ -24,13 +24,14 @@ import {
 export const LinearChart = () => {
     const options = {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: {
-            position: 'top',
+            display : false
           },
           title: {
             display: true,
-            text: 'Chart.js Line Chart',
+            text: 'Visitors per month',
           },
         },
     };
@@ -49,10 +50,7 @@ export const LinearChart = () => {
       };
     return (
         <Line options={options}
-            data={data} 
-            style={{"boxSizing": "border-box",
-                    "display": "block",
-                    "height": "100px",
-                    "width": "100%"}}/>
+            data={data}
+            />
     )
 }

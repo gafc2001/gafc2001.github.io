@@ -44,9 +44,15 @@
 .menu-item.active{
     background-color: var(--bs-primary);
 }
-.main-navbar{
-    left: 250px!important;
+.top-navbar{
     height: 62px;
+    left: 0px!important;
+    background-color: #fff;
+}
+@media(min-width : 992px){
+    .top-navbar{
+        left: 250px!important;
+    }
 }
 .border-semi-light{
     border-color: rgb(92, 92, 92);
@@ -69,7 +75,6 @@
 .summary-value{
     font-size: 50px;
 }
-
-.chart-container{
-    max-height: 300px;
+.chart{
+    height: 350px;
 }
