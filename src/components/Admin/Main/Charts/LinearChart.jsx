@@ -21,7 +21,7 @@ import {
     Legend
   );
 
-export const LinearChart = () => {
+export const LinearChart = ({visitors}) => {
     const options = {
         responsive: true,
         maintainAspectRatio: false,
@@ -35,13 +35,13 @@ export const LinearChart = () => {
           },
         },
     };
-    const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    const labels = visitors.days;
     const data = {
         labels,
         datasets: [
           {
             label: 'Visitors per day',
-            data: [1,4,3,45,1,2,3,2,5],
+            data: visitors.visits,
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
             tension: 0.5
