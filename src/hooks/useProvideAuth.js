@@ -28,6 +28,7 @@ const useProvideAuth = () => {
         const token = localStorage.getItem('auth_token');
         if(!token){
             setIsAuthenticated(false);
+            return;
         }
         setIsLoading(true);
         const response = await verifyService(token);

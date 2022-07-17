@@ -14,13 +14,13 @@ const AppRoutes = () => {
     const {isAuthenticated,verifyAuthentication} = useAuth()
     useEffect(() => {
         if(!isAuthenticated){
-        const request = async () => {
-            await verifyAuthentication()
+            const request = async () => {
+                await verifyAuthentication()
+            }
+            request();
         }
-        request();
-        }
-        
-    },[isAuthenticated,verifyAuthentication]);
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[isAuthenticated]);
     return (
         <Routes>
             <Route exact path="/" element={<Home/>}/>

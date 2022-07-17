@@ -29,7 +29,7 @@ const verifyService = async (token) => {
     const request = await fetch(endpoint,{
         "headers": headers
     }).then(resp => resp.ok)
-    .catch(err => false) 
+    .catch(() => false) 
     return request;
 }
 export {

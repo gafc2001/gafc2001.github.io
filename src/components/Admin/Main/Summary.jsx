@@ -3,7 +3,7 @@ import { SummaryBox } from "./SummaryBox";
 import { Row } from "react-bootstrap";
 export const Summary = () => {
   return (
-    <Row className="summary-container">
+    <Row className="summary-container w-100 g-3">
       <SummaryBox
         bgColor="bg-primary"
         value="30"
@@ -20,7 +20,7 @@ export const Summary = () => {
         bgColor="bg-info"
         value="30"
         icon="fas fa-desktop"
-        text="Whitelist devices"
+        text="Whitelist"
       />
       <SummaryBox
         bgColor="bg-warning"

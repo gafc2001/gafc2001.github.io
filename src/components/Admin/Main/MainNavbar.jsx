@@ -3,7 +3,7 @@ import {Navbar,Nav,Container} from 'react-bootstrap';
 export const MainNavbar = () => {
   return (
     <div>
-    <Navbar bg="light" variant="light" fixed="top" className="main-navbar border-bottom border-semi-light" >
+    <Navbar fixed="top" className="main-navbar border-bottom border-semi-light" >
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">

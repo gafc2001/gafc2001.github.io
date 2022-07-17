@@ -7,12 +7,12 @@ export const Content = () => {
   return (
     <div className="flex-fill pt-4 mt-5">
         <MainNavbar/>
-        <div className="px-4">
+        <div className="px-3">
             <h2>Dashboard</h2>
             <Summary/>
-            <div className="chart-container">
+            {/* <div className="chart-container">
               <LinearChart/>
-            </div>
+            </div> */}
         </div>
 
     </div>
