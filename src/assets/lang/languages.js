@@ -1,3 +1,110 @@
+const technologies = {
+    "backend" : [
+        {
+            name: "Laravel",
+            image: "laravel.svg",
+            className: "text-laravel",
+            alt : "laravel"
+        },
+        {
+            name: "Spring",
+            image: "spring.svg",
+            className: "text-spring",
+            alt : "spring"
+        },
+        {
+            name: "Java",
+            image: "java.png",
+            className: "text-java",
+            alt : "java"
+        },
+        {
+            name: "Django",
+            image: "django.png",
+            className: "text-django",
+            alt : "django"
+        },
+        {
+            name: "PHP",
+            image: "php.png",
+            className: "text-php",
+            alt : "php"
+        },
+    ],
+    "frontend" : [
+        {
+            name: "Bootstrap",
+            image: "bootstrap.svg",
+            className: "text-bootstrap",
+            alt : "bootstrap"
+        },
+        {
+            name: "HTML5",
+            image: "html.png",
+            className: "text-html",
+            alt : "html"
+        },
+        {
+            name: "CSS3",
+            image: "css.png",
+            className: "text-css",
+            alt : "css"
+        },
+        {
+            name: "Javascript",
+            image: "js.png",
+            className: "text-js",
+            alt : "js"
+        },
+        {
+            name: "React Js",
+            image: "react.svg",
+            className: "text-react",
+            alt : "react"
+        },
+    ],
+    "database" : [
+        {
+            name: "MySql",
+            image: "mysql.png",
+            className: "text-mysql",
+            alt : "mysql"
+        },
+        {
+            name: "Postgresql",
+            image: "postgresql.svg",
+            className: "text-postgresql",
+            alt : "postgresql"
+        },
+    ],
+    "tools" : [
+        {
+            name: "VS Code",
+            image: "vscode.png",
+            className: "text-vscode",
+            alt : "vscode"
+        },
+        {
+            name: "Git",
+            image: "git.png",
+            className: "text-git",
+            alt : "git"
+        },
+        {
+            name: "Postman",
+            image: "postman.png",
+            className: "text-postman",
+            alt : "postman"
+        },
+        {
+            name: "Intellij IDEA",
+            image: "intellij.png",
+            className: "text-intellij",
+            alt : "intellij"
+        },
+
+    ]
+}
 const english = {
     "header" : {
         "navbar" : {
@@ -44,70 +151,20 @@ const english = {
             "title" : "Tech skills",
             "technologies" : [
                 {
-                  name: "Laravel",
-                  image: "laravel.svg",
-                  className: "text-laravel",
-                  alt : "laravel"
+                    "title" : "Backend",
+                    "technologies" : technologies.backend
                 },
                 {
-                  name: "Spring",
-                  image: "spring.svg",
-                  className: "text-spring",
-                  alt : "spring"
+                    "title" : "Frontend",
+                    "technologies" : technologies.frontend
                 },
                 {
-                  name: "Java",
-                  image: "java.png",
-                  className: "text-java",
-                  alt : "java"
+                    "title" : "Database",
+                    "technologies" : technologies.database
                 },
                 {
-                  name: "MySql",
-                  image: "mysql.png",
-                  className: "text-mysql",
-                  alt : "mysql"
-                },
-                {
-                  name: "Postgresql",
-                  image: "postgresql.svg",
-                  className: "text-postgresql",
-                  alt : "postgresql"
-                },
-                {
-                  name: "Django",
-                  image: "django.png",
-                  className: "text-django",
-                  alt : "django"
-                },
-                {
-                  name: "PHP",
-                  image: "php.png",
-                  className: "text-php",
-                  alt : "php"
-                },
-                {
-                  name: "Bootstrap",
-                  image: "bootstrap.svg",
-                  className: "text-bootstrap",
-                  alt : "bootstrap"
-                },
-                {
-                  name: "HTML5",
-                  image: "html.png",
-                  className: "text-html",
-                  alt : "html"
-                },
-                {
-                  name: "CSS3",
-                  image: "css.png",
-                  className: "text-css",
-                  alt : "css"
-                },
-                {
-                  name: "Javascript",
-                  image: "js.png",
-                  className: "text-js",
-                  alt : "js"
+                    "title" : "Tools",
+                    "technologies" : technologies.tools
                 },
             ]
         }
@@ -686,72 +743,22 @@ const spanish = {
             "title" : "Tecnologias",
             "technologies" : [
                 {
-                  name: "Laravel",
-                  image: "laravel.svg",
-                  className: "text-laravel",
-                  alt : "laravel"
+                    "title" : "Backend",
+                    "technologies" : technologies.backend
                 },
                 {
-                  name: "Spring",
-                  image: "spring.svg",
-                  className: "text-spring",
-                  alt : "spring"
+                    "title" : "Frontend",
+                    "technologies" : technologies.frontend
                 },
                 {
-                  name: "Java",
-                  image: "java.png",
-                  className: "text-java",
-                  alt : "java"
+                    "title" : "Base de datos",
+                    "technologies" : technologies.database
                 },
                 {
-                  name: "MySql",
-                  image: "mysql.png",
-                  className: "text-mysql",
-                  alt : "mysql"
+                    "title" : "Herramientas",
+                    "technologies" : technologies.tools
                 },
-                {
-                  name: "Postgresql",
-                  image: "postgresql.svg",
-                  className: "text-postgresql",
-                  alt : "postgresql"
-                },
-                {
-                  name: "Django",
-                  image: "django.png",
-                  className: "text-django",
-                  alt : "django"
-                },
-                {
-                  name: "PHP",
-                  image: "php.png",
-                  className: "text-php",
-                  alt : "php"
-                },
-                {
-                  name: "Bootstrap",
-                  image: "bootstrap.svg",
-                  className: "text-bootstrap",
-                  alt : "bootstrap"
-                },
-                {
-                  name: "HTML5",
-                  image: "html.png",
-                  className: "text-html",
-                  alt : "html"
-                },
-                {
-                  name: "CSS3",
-                  image: "css.png",
-                  className: "text-css",
-                  alt : "css"
-                },
-                {
-                  name: "Javascript",
-                  image: "js.png",
-                  className: "text-js",
-                  alt : "js"
-                },
-            ]
+            ],
         }
     },
     "project" : {
