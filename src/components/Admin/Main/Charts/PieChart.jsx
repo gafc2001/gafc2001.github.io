@@ -7,7 +7,6 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 export const PieChart =({visitors}) => {
-    console.log(visitors);
     const options = {
       responsive: true,
       maintainAspectRatio: false,

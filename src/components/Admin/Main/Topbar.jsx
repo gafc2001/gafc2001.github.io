@@ -1,18 +1,17 @@
 import React from 'react';
-import {Navbar,Nav,Container} from 'react-bootstrap';
-export const Topbar = () => {
+import {Navbar} from 'react-bootstrap';
+export const Topbar = ({setToggle,toggle}) => {
+  const handleToggle = () => {
+    setToggle(!toggle);
+    console.log("hola");
+  }
   return (
-    <div>
-    <Navbar fixed="top" className="top-navbar border-bottom border-semi-light" >
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
+      <Navbar expand="lg"  fixed="top" className="top-navbar border-semi-light px-3">
+          <Navbar.Brand>Dashboard</Navbar.Brand>
+          <Navbar.Toggle 
+              className='ms-auto'
+              aria-controls="responsive-navbar-nav"
+              onClick={() => handleToggle()}/>
       </Navbar>
-    </div>
   )
 }
