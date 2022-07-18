@@ -2,7 +2,7 @@
 const increaseVisit = async () => {
     const api = `${process.env.REACT_APP_API_URL}/api/increase`;
     const token_ipinfo = 'd11e824e6cfad7';
-    if(!localStorage.getItem('visitor')){
+    if(!sessionStorage.getItem('visitor')){
 
         const request = await fetch(`https://ipinfo.io/json?token=${token_ipinfo}`)
                             .then(resp => resp.json())
@@ -25,7 +25,7 @@ const increaseVisit = async () => {
             'body' : JSON.stringify(request),
         }).then(resp => resp.json())
         .then(json => {
-            localStorage.setItem('visitor',JSON.stringify(json.data));
+            sessionStorage.setItem('visitor',JSON.stringify(json.data));
         })
         .catch(err => console.log("Error : "+err));
     }

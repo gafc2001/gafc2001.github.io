@@ -4,7 +4,7 @@ const sendMessage = async(data) => {
     const api = `${process.env.REACT_APP_API_URL}/api/message`;
 
     const headers = new Headers();
-    const token = JSON.parse(localStorage.getItem('visitor')).token;
+    const token = JSON.parse(sessionStorage.getItem('visitor')).token;
     headers.append("Authorization", `Bearer ${token}`)
     await fetch(api,{
         'method' : 'POST',
