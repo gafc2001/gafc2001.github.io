@@ -13,7 +13,7 @@ const increaseVisit = async () => {
                                     'city':info.city
                                 }
                             })
-                            .catch(err => {
+                            .catch(() => {
                                 return {
                                     'ip_address' : '0.0.0.0',
                                     'country' : 'anonymous',
@@ -23,7 +23,10 @@ const increaseVisit = async () => {
         await fetch(api,{
             'method' : 'POST',
             'body' : JSON.stringify(request),
-        }).then(resp => resp.json())
+        }).then(resp => {
+            if(!resp.ok) throw new Error("Invalid IP")
+            return resp.json()
+        })
         .then(json => {
             sessionStorage.setItem('visitor',JSON.stringify(json.data));
         })

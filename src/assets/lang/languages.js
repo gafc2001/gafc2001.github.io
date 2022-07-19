@@ -331,7 +331,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://restaurantapi-production.up.railway.app/docs"
+                        "url" : "https://restaurantrestapi.herokuapp.com/docs"
                     }
                 },
             },
@@ -375,7 +375,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://juegaya-production.up.railway.app/"
+                        "url" : "https://juegaya.herokuapp.com/"
                     }
                 },
                 "credentials" : {
@@ -458,7 +458,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://citytours-production.up.railway.app/"
+                        "url" : "https://citytours-web.herokuapp.com/"
                     }
                 },
                 "credentials" : {
@@ -531,7 +531,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://website-ferreteria-production.up.railway.app/"
+                        "url" : "https://tornillin.herokuapp.com/"
                     }
                 },
                 "credentials" : {
@@ -921,7 +921,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://restaurantapi-production.up.railway.app/docs"
+                        "url" : "https://restaurantrestapi.herokuapp.com/docs"
                     }
                 },
             },
@@ -964,7 +964,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://juegaya-production.up.railway.app/"
+                        "url" : "https://juegaya.herokuapp.com/"
                     }
                 },
                 "credentials" : {
@@ -1046,7 +1046,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://citytours-production.up.railway.app/"
+                        "url" : "https://citytours-web.herokuapp.com/"
                     }
                 },
                 "credentials" : {
@@ -1118,7 +1118,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://website-ferreteria-production.up.railway.app/"
+                        "url" : "https://tornillin.herokuapp.com/"
                     }
                 },
                 "credentials" : {
