@@ -115,6 +115,13 @@
 .summary-value{
     font-size: 50px;
 }
+.summary-total{
+    background-color: rgba(0, 0, 0, 0.205);
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 0.4rem 0.4rem;
+}
 .chart{
     height: 350px;
 }

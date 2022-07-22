@@ -18,6 +18,9 @@ export const SummaryBox = ({bgColor,isLoading,data}) => {
             <div className="position-absolute summary-icon-container center">
               <i className={` summary-icon ${data.icon}`}></i>
             </div>
+            {data.total && (
+                <span className='w-100 ps-3 summary-total'>Total : {data.total}</span>  
+              )}
           </div>
         )}
         
