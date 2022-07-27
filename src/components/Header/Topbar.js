@@ -4,16 +4,18 @@ import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import Scrollspy from 'react-scrollspy'
 import useLanguage from "../../hooks/useLanguage";
+import useAuth from "../../hooks/useAuth";
 export const Topbar = ({headerHeight}) => {
 
   const {lang,handleLanguageChange} = useLanguage();
   const data = lang.header.navbar;
 
   const ref = useRef(null)
-
+  const {isAuthenticated} = useAuth();
   const getLanguageInfo = useCallback((value,array) => {
     return array.find( l => l.value === value);
   },[]);
@@ -57,11 +59,17 @@ export const Topbar = ({headerHeight}) => {
               {data.links.map(link => {
                 return(
                   <HashLink key={link.name} 
-                        className="a text-light p-1 ms-2 text-end nav-link" 
+                        className="text-light p-1 ms-2 text-end nav-link" 
                         to={`#${link.href}`}>{link.name}
                   </HashLink>
                 )
               })}
+              {isAuthenticated && (
+                <Link to="superdashboard" className="text-light p-1 ms-2 text-end nav-link">
+                  Dashboard
+                </Link>
+              )}
+              
               </Scrollspy>
               <Dropdown className="mx-3 width-dropdown ms-auto mt-2 mt-md-0">
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
