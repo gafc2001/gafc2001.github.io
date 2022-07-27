@@ -4,6 +4,7 @@ import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
+import { HashLink } from 'react-router-hash-link';
 import Scrollspy from 'react-scrollspy'
 import useLanguage from "../../hooks/useLanguage";
 export const Topbar = ({headerHeight}) => {
@@ -55,9 +56,10 @@ export const Topbar = ({headerHeight}) => {
                          currentClassName="active-link">
               {data.links.map(link => {
                 return(
-                  <Nav.Link key={link.name} className="text-light p-1 ms-2 text-end" href={`#${link.href}`}>
-                    {link.name}
-                  </Nav.Link>
+                  <HashLink key={link.name} 
+                        className="a text-light p-1 ms-2 text-end nav-link" 
+                        to={`#${link.href}`}>{link.name}
+                  </HashLink>
                 )
               })}
               </Scrollspy>
