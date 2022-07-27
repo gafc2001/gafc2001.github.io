@@ -9,12 +9,12 @@ export const TechSkill = () => {
   return (
     
     <Row>
-      {techs.map(tech => (
-        <Col md={12} lg={3}>
+      {techs.map((tech,index) => (
+        <Col md={12} lg={3} key={index}>
           <h2 className="text-lg-center">{tech.title}</h2>
           <Row className="ps-5 ps-md-0">
-          {tech.technologies.map((item) => (
-            <Col className="col-4 col-sm-2" lg={6}>
+          {tech.technologies.map((item,index) => (
+            <Col className="col-4 col-sm-2" lg={6} key={index}>
               <TechItem
                 key={item.alt}
                 name={item.name}
