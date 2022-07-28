@@ -4,7 +4,10 @@ import {Routes, Route} from 'react-router-dom';
 import { Home } from './../../pages/Home'
 import { Login } from './../../pages/Login';
 import { NotFound } from './../../pages/NotFound';
-import { Dashboard } from './../../pages/Dashboard';
+import { Dashboard } from './../../pages/Dashboard/Dashboard';
+import { Index } from './../../pages/Dashboard/Index';
+import { Messages } from './../../pages/Dashboard/Messages';
+import { Visits } from './../../pages/Dashboard/Visits';
 
 import PrivateRoute from './../../components/Routes/PrivateRoute';
 import Unauthenticated from './../../components/Routes/UnauthenticatedRoute';
@@ -31,13 +34,17 @@ const AppRoutes = () => {
                 </Unauthenticated>
                 }
             />
-            <Route exact path="/superdashboard" 
+            <Route path="/superdashboard" 
                 element={
                 <PrivateRoute>
                     <Dashboard/>
                 </PrivateRoute>
                 }
-            />
+            >
+                <Route name="dashboard" index element={<Index/>}/>
+                <Route name="messages" path="messages" element={<Messages/>}/>
+                <Route name="visits" path="visits" element={<Visits/>}/>
+            </Route>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
   )

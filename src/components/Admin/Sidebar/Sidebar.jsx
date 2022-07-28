@@ -15,8 +15,9 @@ export const Sidebar = ({toggle}) => {
                     <div className='p-2'>
                         <nav className='main-navbar'>
                             <ul className='ps-0'>
-                                <MenuItem active text="Dashboard" icon="fas fa-chart-pie"/>
-                                <MenuItem text="Messages" icon="fas fa-envelope"/>
+                                <MenuItem to="/superdashboard" active text="Dashboard" icon="fas fa-chart-pie"/>
+                                <MenuItem to="messages" text="Messages" icon="fas fa-globe-americas"/>
+                                <MenuItem to="visits" text="Visits" icon="fas fa-envelope"/>
                             </ul>
                         </nav>
                     </div>

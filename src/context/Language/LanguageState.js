@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LanguageContext from "./LanguageContext";
 import {language} from './../../assets/lang/languages';
-const UserState = (props) => {
+const LanguageState = (props) => {
     const prefLanguage = localStorage.getItem("lang");
     const [lang, setLang] = useState(language[prefLanguage]);
     const handleLanguageChange = (value) => {
@@ -19,4 +19,4 @@ const UserState = (props) => {
         </LanguageContext.Provider>
     );
 };
-export default UserState;
+export default LanguageState;
