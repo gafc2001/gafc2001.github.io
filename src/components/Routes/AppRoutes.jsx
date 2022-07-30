@@ -34,16 +34,16 @@ const AppRoutes = () => {
                 </Unauthenticated>
                 }
             />
-            <Route path="/superdashboard" 
+            <Route exact path="/superdashboard" 
                 element={
                 <PrivateRoute>
                     <Dashboard/>
                 </PrivateRoute>
                 }
             >
-                <Route name="dashboard" index element={<Index/>}/>
-                <Route name="messages" path="messages" element={<Messages/>}/>
-                <Route name="visits" path="visits" element={<Visits/>}/>
+                <Route name="dashboard" exact index element={<Index/>}/>
+                <Route name="messages" exact path="messages" element={<Messages/>}/>
+                <Route name="visits" exact path="visits" element={<Visits/>}/>
             </Route>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
