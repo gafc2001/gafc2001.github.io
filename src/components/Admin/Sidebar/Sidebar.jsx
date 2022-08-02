@@ -3,8 +3,8 @@ import MenuItem from './MenuItem'
 
 export const Sidebar = ({toggle}) => {
     return (
-        <div className='position-relative'>
-            <aside className={`${toggle?"show-sidebar":""} h-screen sidebar text-light`}>
+        <div className='position-relative h-screen'>
+            <aside className={`${toggle?"show-sidebar":""} h-100 sidebar text-light`}>
                 <div className="sidebar-fixed">
                     <div className='d-flex align-items-center border-bottom border-secondary px-2 mb-3 title-sidebar'>
                         <h1 className="w-100">
