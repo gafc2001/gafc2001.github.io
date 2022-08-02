@@ -24,6 +24,7 @@ import {
 export const LinearChart = ({visitors}) => {
     const options = {
         responsive: true,
+        tension : 0.5,
         maintainAspectRatio: false,
         plugins: {
           legend: {
@@ -44,7 +45,6 @@ export const LinearChart = ({visitors}) => {
             data: visitors.visits,
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
-            tension: 0.5
           },
         ],
       };

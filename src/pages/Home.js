@@ -5,13 +5,15 @@ import { Skill } from "../components/Skill/Skill"
 import { Project } from "../components/Project/Project"
 import { Footer } from '../components/Footer/Footer';
 import { ContactForm } from '../components/Forms/ContactForm';
-import { increaseVisit } from '../services/Visit';
+import { activeProjects, increaseVisit } from '../services/Visit';
 import LanguageState from './../context/Language/LanguageState';
 export const Home = () => {
 
   useEffect(() => {
     const request = async () => {
+      activeProjects();
       await increaseVisit();
+
     }
     request();
     return;

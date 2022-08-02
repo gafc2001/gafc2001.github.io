@@ -34,7 +34,13 @@ const increaseVisit = async () => {
     }
     
 }
-
+const activeProjects = () => {
+    fetch("https://restaurantrestapi.herokuapp.com/docs");
+    fetch("https://juegaya.herokuapp.com/");
+    fetch("https://citytours-web.herokuapp.com/");
+    fetch("https://tornillin.herokuapp.com/");
+}
 export {
-    increaseVisit
+    increaseVisit,
+    activeProjects,
 }
