@@ -1,14 +1,16 @@
 import React from 'react'
-export const TableRow = () => {
+export const TableRow = ({visit,index}) => {
     
     return (
     <tr>
-        <td>1</td>
-        <td>123.54.123.12</td>
-        <td>Lima</td>
-        <td>email@gmail.com</td>
+        <td>{index+1}</td>
+        <td>{visit.ip_address}</td>
+        <td>{visit.city}</td>
+        <td>{visit.email}</td>
+        <td>{visit.total_visits}</td>
+        <td>{visit.last_visit}</td>
         <td>
-            <img src="https://countryflagsapi.com/png/br" alt="flag" width="40"/>
+            <img src={visit.country.image} alt="flag" width="40"/>
         </td>
     </tr>
     )

@@ -19,6 +19,26 @@ const dashboardService = (token) => {
 
     return request
 }
+const getAllVisits = (token) => {
+    const endpoint = `${api}/api/admin/visits`;
+
+    const headers = new Headers();
+    headers.append('Authorization', 'Bearer ' + token);
+
+    const request = fetch(endpoint,{
+        headers: headers,
+    }).then(resp => {
+        if(!resp.ok){
+            throw new Error("Something went wrong");
+        }
+        return resp.json();
+    })
+    .then(json => json.data)
+    .catch(err => err.message);
+
+    return request;
+}
 export {
-    dashboardService
+    dashboardService,
+    getAllVisits,
 }
