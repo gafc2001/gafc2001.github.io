@@ -213,7 +213,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://restaurant-web-online.netlify.app/"
+                        "url" : "https://restaurant.devgustavo.com"
                     }
                 },
                 "credentials" : {
@@ -331,7 +331,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://restaurantrestapi.herokuapp.com/docs"
+                        "url" : "https://restaurantapi.devgustavo.com/docs"
                     }
                 },
             },
@@ -375,7 +375,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://juegaya.herokuapp.com/"
+                        "url" : "https://juegaya.devgustavo.com/"
                     }
                 },
                 "credentials" : {
@@ -458,7 +458,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://citytours-web.herokuapp.com/"
+                        "url" : "https://citytours.devgustavo.com/"
                     }
                 },
                 "credentials" : {
@@ -531,7 +531,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://tornillin.herokuapp.com/"
+                        "url" : "https://tornillin.devgustavo.com/"
                     }
                 },
                 "credentials" : {
@@ -602,7 +602,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://bienes-raices-online.netlify.app/"
+                        "url" : "https://bienes-raices.devgustavo.com"
                     }
                 },
             },
@@ -639,7 +639,7 @@ const english = {
                     "project" : {
                         "name" : "Go to the project",
                         "icon" : "fas fa-globe",
-                        "url" : "https://store-online-grid.netlify.app/"
+                        "url" : "https://store-online.devgustavo.com"
                     }
                 },
             },
@@ -804,7 +804,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://restaurant-web-online.netlify.app/"
+                        "url" : "https://restaurant.devgustavo.com"
                     }
                 },
                 "credentials" : {
@@ -921,7 +921,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://restaurantrestapi.herokuapp.com/docs"
+                        "url" : "https://restaurantapi.devgustavo.com/docs"
                     }
                 },
             },
@@ -964,7 +964,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://juegaya.herokuapp.com/"
+                        "url" : "https://juegaya.devgustavo.com/"
                     }
                 },
                 "credentials" : {
@@ -1046,7 +1046,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://citytours-web.herokuapp.com/"
+                        "url" : "https://citytours.devgustavo.com/"
                     }
                 },
                 "credentials" : {
@@ -1118,7 +1118,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://tornillin.herokuapp.com/"
+                        "url" : "https://tornillin.devgustavo.com/"
                     }
                 },
                 "credentials" : {
@@ -1190,7 +1190,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://bienes-raices-online.netlify.app/"
+                        "url" : "https://bienes-raices.devgustavo.com"
                     }
                 },
             },
@@ -1227,7 +1227,7 @@ const spanish = {
                     "project" : {
                         "name" : "Ir al proyecto",
                         "icon" : "fas fa-globe",
-                        "url" : "https://store-online-grid.netlify.app/"
+                        "url" : "https://store-online.devgustavo.com"
                     }
                 },
             },
