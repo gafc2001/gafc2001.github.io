@@ -33,10 +33,13 @@ export const ContactForm = () => {
         e.preventDefault();
         setLoading(true);
         button.current.setAttribute("disabled",true);
-        await sendMessage(formdata);
+        const response = await sendMessage(formdata);
         setLoading(false);
         setValidate(false);
-        setFormdata(initialState);
+        console.log(response);
+        if(response){
+            setFormdata(initialState);
+        }
         button.current.removeAttribute("disabled");
     }
 
