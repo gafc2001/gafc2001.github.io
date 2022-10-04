@@ -1,8 +1,11 @@
 import Alert from "./../components/Utils/Alert";
-
+import { getUserIpAddress} from './Visit/index';
 const api = process.env.REACT_APP_API_URL;
 const signinService = async(request) => {
     const endpoint = `${api}/api/auth/login`;
+
+    const {ip_address} = await getUserIpAddress();
+    request.ip_address = ip_address;
     return await fetch(endpoint,{
             'method' : 'POST',
             'body' : JSON.stringify(request),
