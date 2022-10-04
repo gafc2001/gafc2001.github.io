@@ -33,7 +33,13 @@ const getAllVisits = (token) => {
         }
         return resp.json();
     })
-    .then(json => json.data)
+    .then(json => {
+        const sortedData = json.data
+            .sort( (a,b) => {
+                return new Date(b.last_visit) - new Date(a.last_visit);
+            })
+        return sortedData;
+    })
     .catch(err => err.message);
 
     return request;
