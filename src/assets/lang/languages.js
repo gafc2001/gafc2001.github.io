@@ -136,7 +136,7 @@ const english = {
             ]
         },
         "banner" :{
-            "title" : "Hello! I'm Gustavo Farfan Coraje",
+            "title" : "Hi! I'm Gustavo",
             "paragraphs" : [
                 "Software Developer, graduated from Senati Institute.",
                 "Able to create functional and maintainable applications from start to finish. Willing to face new challenges and learn new technologies that allow me to grow professionally.",
@@ -728,7 +728,7 @@ const spanish = {
             ],
         },
         "banner" :{
-            "title" : "Hola! Soy Gustavo Farfan Coraje",
+            "title" : "Hola! Soy Gustavo",
             "paragraphs" : [
                 "Desarrollador de Software, egresado del Instituto SENATI.",
                 "Capaz de crear aplicaciones funcionales y mantenibles de inicio a fin. Dispuesto a afrontar nuevos retos y aprender nuevas tecnologías que me permitan crecer profesionalmente.",
