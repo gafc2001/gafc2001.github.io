@@ -41,7 +41,7 @@ export const Banner = () => {
                 </a>
               </li>
               <li className='list-inline-item btn-download-cv'>
-                <a href={process.env.REACT_APP_API_URL+'/assets/curriculum.pdf'} download className='text-light text-center d-inline-block text-decoration-none'>
+                <a href={process.env.REACT_APP_API_URL+'/assets/curriculum.pdf'} target="_blank" rel="noreferrer" className='text-light text-center d-inline-block text-decoration-none'>
                   <span>Descargar CV</span>  <i className="fas fa-file-alt"></i> 
                 </a>
               </li>
