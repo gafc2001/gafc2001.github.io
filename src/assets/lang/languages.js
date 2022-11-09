@@ -139,8 +139,8 @@ const english = {
             "title" : "Hi! I'm Gustavo",
             "paragraphs" : [
                 "Software Developer, graduated from Senati Institute.",
-                "Able to create functional and maintainable applications from start to finish. Willing to face new challenges and learn new technologies that allow me to grow professionally.",
-                "I describe myselft as a creative person, team player, self-taught, analytical and problem-solving."
+                "Knowledge in web applications development.. Willing to take on new challenges that have a global impact and passionate about learning and technology.",
+                "I describe myself as a creative, responsible and self-taught person. I can adapt to different work teams with easily."
             ],
         },
     },
@@ -731,8 +731,8 @@ const spanish = {
             "title" : "Hola! Soy Gustavo",
             "paragraphs" : [
                 "Desarrollador de Software, egresado del Instituto SENATI.",
-                "Capaz de crear aplicaciones funcionales y mantenibles de inicio a fin. Dispuesto a afrontar nuevos retos y aprender nuevas tecnologías que me permitan crecer profesionalmente.",
-                "Me caracterizo por ser una persona creativa, trabajo en equipo, autodidacta y resolver problemas."               
+                "Con experiencia en desarrollo de aplicaciones. Dispuesto a afrontar nuevos retos que tengan un impacto global y apasionado por el aprendizaje y la tecnología.",
+                "Soy una persona creativa, responsable y autodidacta. Ademas de adapatarme a diferentes equipos de trabajo con facilidad"
             ],
         },
     },

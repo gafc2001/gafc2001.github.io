@@ -15,13 +15,15 @@ export const Banner = () => {
           <div className="text-typing">
             <h1 className="fw-bolder text-custom">{data.title}</h1>
           </div>
-          <p className="font-monospace fs-5 fw-light text-typing"><span className="purple">print</span>(<span
-            className="string">"Software Developer"</span>)</p>
+          <p className="font-monospace fs-5 fw-light text-typing">
+            <span className="purple">print</span>
+            (<span className="string">"Software Developer"</span>)
+          </p>
           <div className="ps-3 border-4 border-start border-custom fs-5">
             {data.paragraphs.map( (paragraph,index) => <p className="paragraph" key={index} >{paragraph}</p>)}
           </div>
           <div className="socialmedia-links">
-            <ul className="list-inline">
+            <ul className="list-inline d-flex align-items-center">
               <li className='banner-link list-inline-item'>
                 <a rel="noopener noreferrer" target="_blank"className="text-light text-center d-inline-block link"
                     href="https://www.linkedin.com/in/gustavo-farfan-coraje-64488b211/">
@@ -36,6 +38,11 @@ export const Banner = () => {
               <li className='banner-link list-inline-item'>
                 <a rel="noopener noreferrer" target="_blank"className="text-light text-center d-inline-block link" href="https://github.com/gafc2001">
                   <i className="fab fa-github"></i>
+                </a>
+              </li>
+              <li className='list-inline-item btn-download-cv'>
+                <a href={process.env.REACT_APP_API_URL+'/assets/curriculum.pdf'} download className='text-light text-center d-inline-block text-decoration-none'>
+                  <span>Descargar CV</span>  <i className="fas fa-file-alt"></i> 
                 </a>
               </li>
             </ul>
