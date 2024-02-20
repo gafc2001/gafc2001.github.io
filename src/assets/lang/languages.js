@@ -102,6 +102,12 @@ const technologies = {
             className: "text-intellij",
             alt : "intellij"
         },
+        {
+            name: "Nginx",
+            image: "nginx.png",
+            className: "text-intellij",
+            alt : "nginx"
+        },
 
     ]
 }
@@ -138,8 +144,8 @@ const english = {
         "banner" :{
             "title" : "Hi! I'm Gustavo",
             "paragraphs" : [
-                "Software Developer, graduated from Senati Institute.",
-                "Knowledge in web applications development.. Willing to take on new challenges that have a global impact and passionate about learning and technology.",
+                "Software Developer, specialized in web development",
+                "Knowledge in web applications development. Willing to take on new challenges that have a global impact and passionate about learning and technology.",
                 "I describe myself as a creative, responsible and self-taught person. I can adapt to different work teams with easily."
             ],
         },
@@ -436,7 +442,7 @@ const english = {
                     },
                 ],
                 "technologies" : [
-                    "django.png",
+                    "laravel.svg",
                     "postgresql.svg",
                     "js.png",
                     "css.png",
@@ -496,78 +502,78 @@ const english = {
                 }
             },
             //Tornillin
-            {
-                "title" : "Tornillin",
-                "paragraphs" : [
-                    "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase.",
-                ],
-                "extras" : {
-                    "techs_text" : "Used Technologies"
-                },
-                "links" : [
-                    {
-                        "name" : "Go to the repository",
-                        "icon" : "fab fa-github",
-                        "url" : "https://github.com/gafc2001/Website-ferreteria"
-                    },
-                ],
-                "technologies" : [
-                    "laravel.svg",
-                    "postgresql.svg",
-                    "js.png",
-                    "css.png",
-                    "html.png",
-                ],
-                "gallery" : [
-                    'tornillin/picture-1.png',
-                    'tornillin/picture-2.png',
-                    'tornillin/picture-3.png',
-                ],
-                "gallery_buttons" : {
-                    "gallery" : {
-                        "name" : "See gallery",
-                        "icon" : "fas fa-images",
-                    },
-                    "project" : {
-                        "name" : "Go to the project",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://tornillin.devgustavo.com/"
-                    }
-                },
-                "credentials" : {
-                    "description" : "Sandbox accounts",
-                    "tables" : [
-                        {
-                            "headers" : [
-                                {
-                                    "name" : "Credential",
-                                    "width" : "20"
-                                },
-                                {
-                                    "name" : "Email or user",
-                                    "width" : "30"
-                                },
-                                {
-                                    "name" : "Password",
-                                    "width" : "10"
-                                },
-                                {
-                                    "name" : "Observation",
-                                    "width" : "40"
-                                },
-                            ],
-                            "body" : [
-                                {
-                                    "credential" : "Client",
-                                    "account" : "client",
-                                    "password" : "12345678",
-                                    "observation" : "Account to log in or otherwise register new user"
-                                },
-                            ]
-                        },
-                    ]
-                }
-            },
+            // {
+            //     "title" : "Tornillin",
+            //     "paragraphs" : [
+            //         "Tornillin is a web application for a hardware store that allows you to buy products, adding it to the cart and then proceeding with the payment and then being able to see the summary of your purchase.",
+            //     ],
+            //     "extras" : {
+            //         "techs_text" : "Used Technologies"
+            //     },
+            //     "links" : [
+            //         {
+            //             "name" : "Go to the repository",
+            //             "icon" : "fab fa-github",
+            //             "url" : "https://github.com/gafc2001/Website-ferreteria"
+            //         },
+            //     ],
+            //     "technologies" : [
+            //         "django.png",
+            //         "postgresql.svg",
+            //         "js.png",
+            //         "css.png",
+            //         "html.png",
+            //     ],
+            //     "gallery" : [
+            //         'tornillin/picture-1.png',
+            //         'tornillin/picture-2.png',
+            //         'tornillin/picture-3.png',
+            //     ],
+            //     "gallery_buttons" : {
+            //         "gallery" : {
+            //             "name" : "See gallery",
+            //             "icon" : "fas fa-images",
+            //         },
+            //         "project" : {
+            //             "name" : "Go to the project",
+            //             "icon" : "fas fa-globe",
+            //             "url" : "https://tornillin.devgustavo.com/"
+            //         }
+            //     },
+            //     "credentials" : {
+            //         "description" : "Sandbox accounts",
+            //         "tables" : [
+            //             {
+            //                 "headers" : [
+            //                     {
+            //                         "name" : "Credential",
+            //                         "width" : "20"
+            //                     },
+            //                     {
+            //                         "name" : "Email or user",
+            //                         "width" : "30"
+            //                     },
+            //                     {
+            //                         "name" : "Password",
+            //                         "width" : "10"
+            //                     },
+            //                     {
+            //                         "name" : "Observation",
+            //                         "width" : "40"
+            //                     },
+            //                 ],
+            //                 "body" : [
+            //                     {
+            //                         "credential" : "Client",
+            //                         "account" : "client",
+            //                         "password" : "12345678",
+            //                         "observation" : "Account to log in or otherwise register new user"
+            //                     },
+            //                 ]
+            //             },
+            //         ]
+            //     }
+            // },
             //Bienes y Raices
             {
                 "title" : "Bienes y Raices",
@@ -730,7 +736,7 @@ const spanish = {
         "banner" :{
             "title" : "Hola! Soy Gustavo",
             "paragraphs" : [
-                "Desarrollador de Software, egresado del Instituto SENATI.",
+                "Desarrollador de Software, especializado en el desarrollo web",
                 "Con experiencia en desarrollo de aplicaciones. Dispuesto a afrontar nuevos retos que tengan un impacto global y apasionado por el aprendizaje y la tecnología.",
                 "Soy una persona creativa, responsable y autodidacta. Ademas de adapatarme a diferentes equipos de trabajo con facilidad"
             ],
@@ -1024,7 +1030,7 @@ const spanish = {
                     },
                 ],
                 "technologies" : [
-                    "django.png",
+                    "laravel.svg",
                     "postgresql.svg",
                     "js.png",
                     "css.png",
@@ -1084,78 +1090,78 @@ const spanish = {
                 }
             },
             //Tornillin
-            {
-                "title" : "Tornillin",
-                "paragraphs" : [
-                    "Tornillin es una aplicacion web para una ferreteria que te permite comprar productos, agregandolo al carrito y luego procediendo con el pago y luego poder ver el resument de tu compra.",
-                ],
-                "extras" : {
-                },
-                "links" : [
-                    {
-                        "name" : "Ir al repositorio",
-                        "icon" : "fab fa-github",
-                        "url" : "https://github.com/gafc2001/Website-ferreteria"
-                    },
-                ],
-                "technologies" : [
-                    "laravel.svg",
-                    "postgresql.svg",
-                    "js.png",
-                    "css.png",
-                    "html.png",
-                ],
-                "gallery" : [
-                    'tornillin/picture-1.png',
-                    'tornillin/picture-2.png',
-                    'tornillin/picture-3.png',
-                ],
-                "gallery_buttons" : {
-                    "gallery" : {
-                        "name" : "Ver galería",
-                        "icon" : "fas fa-images",
-                    },
-                    "project" : {
-                        "name" : "Ir al proyecto",
-                        "icon" : "fas fa-globe",
-                        "url" : "https://tornillin.devgustavo.com/"
-                    }
-                },
-                "credentials" : {
-                    "description" : "Cuentas de prueba",
-                    "tables" : [
-                        {
-                            "headers" : [
-                                {
-                                    "name" : "Credencial",
-                                    "width" : "20"
-                                },
-                                {
-                                    "name" : "Correo o usuario",
-                                    "width" : "30"
-                                },
-                                {
-                                    "name" : "Contraseña",
-                                    "width" : "10"
-                                },
-                                {
-                                    "name" : "Observacion",
-                                    "width" : "40"
-                                },
-                            ],
-                            "body" : [
-                                {
-                                    "credential" : "Cliente",
-                                    "account" : "client",
-                                    "password" : "12345678",
-                                    "observation" : "Cuenta para iniciar sesión o de lo contrario registrar un nuevo usuario"
-                                },
-                            ]
-                        },
-                    ]
-                }
+            // {
+            //     "title" : "Tornillin",
+            //     "paragraphs" : [
+            //         "Tornillin es una aplicacion web para una ferreteria que te permite comprar productos, agregandolo al carrito y luego procediendo con el pago y luego poder ver el resument de tu compra.",
+            //     ],
+            //     "extras" : {
+            //     },
+            //     "links" : [
+            //         {
+            //             "name" : "Ir al repositorio",
+            //             "icon" : "fab fa-github",
+            //             "url" : "https://github.com/gafc2001/Website-ferreteria"
+            //         },
+            //     ],
+            //     "technologies" : [
+            //         "django.png",
+            //         "postgresql.svg",
+            //         "js.png",
+            //         "css.png",
+            //         "html.png",
+            //     ],
+            //     "gallery" : [
+            //         'tornillin/picture-1.png',
+            //         'tornillin/picture-2.png',
+            //         'tornillin/picture-3.png',
+            //     ],
+            //     "gallery_buttons" : {
+            //         "gallery" : {
+            //             "name" : "Ver galería",
+            //             "icon" : "fas fa-images",
+            //         },
+            //         "project" : {
+            //             "name" : "Ir al proyecto",
+            //             "icon" : "fas fa-globe",
+            //             "url" : "https://tornillin.devgustavo.com/"
+            //         }
+            //     },
+            //     "credentials" : {
+            //         "description" : "Cuentas de prueba",
+            //         "tables" : [
+            //             {
+            //                 "headers" : [
+            //                     {
+            //                         "name" : "Credencial",
+            //                         "width" : "20"
+            //                     },
+            //                     {
+            //                         "name" : "Correo o usuario",
+            //                         "width" : "30"
+            //                     },
+            //                     {
+            //                         "name" : "Contraseña",
+            //                         "width" : "10"
+            //                     },
+            //                     {
+            //                         "name" : "Observacion",
+            //                         "width" : "40"
+            //                     },
+            //                 ],
+            //                 "body" : [
+            //                     {
+            //                         "credential" : "Cliente",
+            //                         "account" : "client",
+            //                         "password" : "12345678",
+            //                         "observation" : "Cuenta para iniciar sesión o de lo contrario registrar un nuevo usuario"
+            //                     },
+            //                 ]
+            //             },
+            //         ]
+            //     }
                 
-            },
+            // },
             //Bienes y Raices
             {
                 "title" : "Bienes y Raices",

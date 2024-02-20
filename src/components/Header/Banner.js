@@ -48,12 +48,12 @@ export const Banner = () => {
             </ul>
           </div>
         </Col>
-        <Col lg="4" className="d-flex">
+        {/* <Col lg="4" className="d-flex">
           <div className="mx-lg-5 text-center w-100">
             <img src={require("./../../assets/images/profile.jpg")} alt="profile"
               className="img-fluid rounded shadow-lg rounded-circle img-profile"/>
           </div>
-        </Col>
+        </Col> */}
       </Row>
 
     </div>
