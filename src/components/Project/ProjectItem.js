@@ -29,7 +29,7 @@ export const ProjectItem = ({ data }) => {
                     {data.technologies.map((tech,it) => 
                         <div key={it}>
                             <img src={require(`./../../assets/images/technologies/${tech}`)} alt={tech}
-                                className={`tech-img ${tech==="react.svg"?"bg-dark":""} p-3 rounded-custom`} />
+                                className={`tech-img p-2 rounded-custom`} />
                         </div>
                     )}
                 </div>

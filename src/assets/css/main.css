@@ -144,7 +144,7 @@ img.img-profile {
 }
 
 .rounded-custom {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .active-link {
@@ -212,7 +212,7 @@ img.img-profile {
 }
 
 .tech-img {
-  height: 70px;
+  height: 50px;
   text-align: left;
 }
 
@@ -317,6 +317,8 @@ img.img-profile {
   cursor: pointer;
   position: relative;
   transition: .4s ease-in-out;
+  height: 290px;
+  overflow: hidden;
 }
 
 .gallery-overlay {

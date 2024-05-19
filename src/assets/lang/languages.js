@@ -178,6 +178,44 @@ const english = {
     "project" : {
         "title" : "Personal projects",
         "projects" : [
+            //Notes App
+            {
+                "title" : "Notes App",
+                "paragraphs" : [
+                    "It is a fullstack web application developed with Next Js and Java with Spring Boot Framework, it allows you to manage notes, such as creating, editing, deleting or even archiving them"
+                ],
+                "extras" : {
+                    "techs_text" : ""
+                },
+                "links" : [
+                    {
+                        "name" : "Go to the repository",
+                        "icon" : "fab fa-github",
+                        "url" : "https://github.com/gafc2001/note-app"
+                    }
+                ],
+                "technologies" : [
+                    "nextjs.png",
+                    "spring.svg",
+                    "java.png",
+                    "mysql.png",
+                ],
+                "gallery" : [
+                    'notes/picture-1.png',
+                    'notes/picture-2.png',
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "See gallery",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Go to the project",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://notes.devgustavo.com"
+                    }
+                },
+            },
             //Online Restaurant
             {
                 "title" : "Online Restaurant",
@@ -770,6 +808,43 @@ const spanish = {
     "project" : {
         "title" : "Mis proyectos",
         "projects" : [
+            {
+                "title" : "Notes App",
+                "paragraphs" : [
+                    "Esta es una aplicacion fullstack hecha con Next Js y Java con el framework de Spring Boot, te permite manejar notas, como crear, editar, eliminar o incluso archivarlas"
+                ],
+                "extras" : {
+                    "techs_text" : ""
+                },
+                "links" : [
+                    {
+                        "name" : "Ir al repositorio",
+                        "icon" : "fab fa-github",
+                        "url" : "https://github.com/gafc2001/note-app"
+                    }
+                ],
+                "technologies" : [
+                    "nextjs.png",
+                    "spring.svg",
+                    "java.png",
+                    "mysql.png",
+                ],
+                "gallery" : [
+                    'notes/picture-1.png',
+                    'notes/picture-2.png',
+                ],
+                "gallery_buttons" : {
+                    "gallery" : {
+                        "name" : "Ver galería",
+                        "icon" : "fas fa-images",
+                    },
+                    "project" : {
+                        "name" : "Ir al proyecto",
+                        "icon" : "fas fa-globe",
+                        "url" : "https://notes.devgustavo.com"
+                    }
+                },
+            },
             //Online Restaurant
             {
                 "title" : "Restaurant en linea",
