@@ -43,12 +43,6 @@ export const ProjectItem = ({ data }) => {
                             <i className={`me-1 ${data.gallery_buttons.gallery.icon}`}></i>
                             {data.gallery_buttons.gallery.name}
                         </span>
-                        <span className="gallery-button">
-                            <a href={data.gallery_buttons.project.url} rel="noopener noreferrer" target="_blank" >
-                                <i className={`me-1 ${data.gallery_buttons.project.icon}`}></i>
-                                {data.gallery_buttons.project.name}
-                            </a>
-                        </span>
                     </div>
                 </div>
                 {data.credentials && (
