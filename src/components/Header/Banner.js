@@ -3,6 +3,7 @@ import useLanguage from '../../hooks/useLanguage';
 //Bootstrap components
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import cvFile from '../../assets/documents/CV_GUSTAVO_FARFAN.pdf'
 
 export const Banner = () => {
   const {lang} = useLanguage();
@@ -41,7 +42,7 @@ export const Banner = () => {
                 </a>
               </li>
               <li className='list-inline-item btn-download-cv'>
-                <a href={process.env.REACT_APP_API_URL+'/assets/curriculum.pdf'} target="_blank" rel="noreferrer" className='text-light text-center d-inline-block text-decoration-none'>
+                <a href={cvFile} target="_blank" rel="noreferrer" className='text-light text-center d-inline-block text-decoration-none'>
                   <span>Descargar CV</span>  <i className="fas fa-file-alt"></i> 
                 </a>
               </li>
