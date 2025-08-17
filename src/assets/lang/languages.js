@@ -148,6 +148,7 @@ const english = {
                 "Knowledge in web applications development. Willing to take on new challenges that have a global impact and passionate about learning and technology.",
                 "I describe myself as a creative, responsible and self-taught person. I can adapt to different work teams with easily."
             ],
+            "cv_link" : "assets/documents/en/CV_GUSTAVO_FARFAN.pdf",
         },
     },
     
@@ -778,6 +779,7 @@ const spanish = {
                 "Con experiencia en desarrollo de aplicaciones. Dispuesto a afrontar nuevos retos que tengan un impacto global y apasionado por el aprendizaje y la tecnología.",
                 "Soy una persona creativa, responsable y autodidacta. Ademas de adapatarme a diferentes equipos de trabajo con facilidad"
             ],
+            "cv_link" : "assets/documents/es/CV_GUSTAVO_FARFAN.pdf",
         },
     },
     
